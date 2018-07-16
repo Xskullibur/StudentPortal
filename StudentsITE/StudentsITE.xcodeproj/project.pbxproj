@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
 		DFB25CAE20F5B33900F493F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAD20F5B33900F493F3 /* ViewController.m */; };
 		DFB25CB120F5B33900F493F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CAF20F5B33900F493F3 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersDetails.h; sourceTree = "<group>"; };
+		DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersDetails.m; sourceTree = "<group>"; };
 		DFB25CA620F5B33900F493F3 /* StudentsITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsITE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB25CA920F5B33900F493F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFB25CAA20F5B33900F493F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 		DFB25CA820F5B33900F493F3 /* StudentsITE */ = {
 			isa = PBXGroup;
 			children = (
+				DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */,
+				DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */,
 				DFB25CA920F5B33900F493F3 /* AppDelegate.h */,
 				DFB25CAA20F5B33900F493F3 /* AppDelegate.m */,
 				DFB25CAC20F5B33900F493F3 /* ViewController.h */,
@@ -283,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB25CAE20F5B33900F493F3 /* ViewController.m in Sources */,
+				DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */,
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
 				DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
