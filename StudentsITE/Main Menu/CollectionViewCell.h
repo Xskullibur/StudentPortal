@@ -1,5 +1,5 @@
 //
-//  MainMenuCVC.h
+//  CollectionViewCell.h
 //  StudentsITE
 //
 //  Created by Alson on 16/7/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainMenuCVC : UICollectionViewController
+@interface CollectionViewCell : UICollectionViewCell
 
 @end

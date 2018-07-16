@@ -1,13 +1,13 @@
 //
-//  MainMenuCVC.h
+//  CollectionViewCell.m
 //  StudentsITE
 //
 //  Created by Alson on 16/7/18.
 //  Copyright © 2018 Student2. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CollectionViewCell.h"
 
-@interface MainMenuCVC : UICollectionViewController
+@implementation CollectionViewCell
 
 @end
