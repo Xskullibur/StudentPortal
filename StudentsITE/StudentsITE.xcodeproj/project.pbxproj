@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFA3790C20FC3C59004D4C1B /* Lect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA3790B20FC3C59004D4C1B /* Lect.storyboard */; };
+		DFA3790F20FC3C76004D4C1B /* LectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA3790E20FC3C76004D4C1B /* LectVC.m */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
 		DFB25CAE20F5B33900F493F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAD20F5B33900F493F3 /* ViewController.m */; };
-		DFB25CB120F5B33900F493F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CAF20F5B33900F493F3 /* Main.storyboard */; };
 		DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB220F5B33900F493F3 /* Assets.xcassets */; };
 		DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB420F5B33900F493F3 /* LaunchScreen.storyboard */; };
 		DFB25CB920F5B33900F493F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CB820F5B33900F493F3 /* main.m */; };
 		DFB25CC320F5B33900F493F3 /* StudentsITETests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CC220F5B33900F493F3 /* StudentsITETests.m */; };
 		DFB25CCE20F5B33900F493F3 /* StudentsITEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CCD20F5B33900F493F3 /* StudentsITEUITests.m */; };
-		DFC9850A20F5B6C90047EAE7 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC9850920F5B6C90047EAE7 /* MainMenu.storyboard */; };
+		DFC9850A20F5B6C90047EAE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC9850920F5B6C90047EAE7 /* Main.storyboard */; };
 		DFC9850D20F5B77F0047EAE7 /* MainMenuCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC9850C20F5B77F0047EAE7 /* MainMenuCVC.m */; };
 /* End PBXBuildFile section */
 
@@ -37,12 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DFA3790B20FC3C59004D4C1B /* Lect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lect.storyboard; sourceTree = "<group>"; };
+		DFA3790D20FC3C76004D4C1B /* LectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LectVC.h; sourceTree = "<group>"; };
+		DFA3790E20FC3C76004D4C1B /* LectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LectVC.m; sourceTree = "<group>"; };
 		DFB25CA620F5B33900F493F3 /* StudentsITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsITE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB25CA920F5B33900F493F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFB25CAA20F5B33900F493F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DFB25CAC20F5B33900F493F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DFB25CAD20F5B33900F493F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DFB25CB020F5B33900F493F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFB25CB220F5B33900F493F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFB25CB520F5B33900F493F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFB25CB720F5B33900F493F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +56,7 @@
 		DFB25CC920F5B33900F493F3 /* StudentsITEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentsITEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB25CCD20F5B33900F493F3 /* StudentsITEUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentsITEUITests.m; sourceTree = "<group>"; };
 		DFB25CCF20F5B33900F493F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFC9850920F5B6C90047EAE7 /* MainMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
+		DFC9850920F5B6C90047EAE7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DFC9850B20F5B77F0047EAE7 /* MainMenuCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuCVC.h; sourceTree = "<group>"; };
 		DFC9850C20F5B77F0047EAE7 /* MainMenuCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenuCVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,9 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DFA3790A20FC3C3C004D4C1B /* Lect Info */ = {
+			isa = PBXGroup;
+			children = (
+				DFA3790B20FC3C59004D4C1B /* Lect.storyboard */,
+				DFA3790D20FC3C76004D4C1B /* LectVC.h */,
+				DFA3790E20FC3C76004D4C1B /* LectVC.m */,
+			);
+			path = "Lect Info";
+			sourceTree = "<group>";
+		};
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
+				DFA3790A20FC3C3C004D4C1B /* Lect Info */,
 				DFC9850520F5B5B40047EAE7 /* Main Menu */,
 				DFB25CA820F5B33900F493F3 /* StudentsITE */,
 				DFB25CC120F5B33900F493F3 /* StudentsITETests */,
@@ -111,7 +125,6 @@
 				DFB25CAA20F5B33900F493F3 /* AppDelegate.m */,
 				DFB25CAC20F5B33900F493F3 /* ViewController.h */,
 				DFB25CAD20F5B33900F493F3 /* ViewController.m */,
-				DFB25CAF20F5B33900F493F3 /* Main.storyboard */,
 				DFB25CB220F5B33900F493F3 /* Assets.xcassets */,
 				DFB25CB420F5B33900F493F3 /* LaunchScreen.storyboard */,
 				DFB25CB720F5B33900F493F3 /* Info.plist */,
@@ -141,7 +154,7 @@
 		DFC9850520F5B5B40047EAE7 /* Main Menu */ = {
 			isa = PBXGroup;
 			children = (
-				DFC9850920F5B6C90047EAE7 /* MainMenu.storyboard */,
+				DFC9850920F5B6C90047EAE7 /* Main.storyboard */,
 				DFC9850B20F5B77F0047EAE7 /* MainMenuCVC.h */,
 				DFC9850C20F5B77F0047EAE7 /* MainMenuCVC.m */,
 			);
@@ -255,9 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */,
-				DFC9850A20F5B6C90047EAE7 /* MainMenu.storyboard in Resources */,
+				DFA3790C20FC3C59004D4C1B /* Lect.storyboard in Resources */,
+				DFC9850A20F5B6C90047EAE7 /* Main.storyboard in Resources */,
 				DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */,
-				DFB25CB120F5B33900F493F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +298,7 @@
 				DFB25CAE20F5B33900F493F3 /* ViewController.m in Sources */,
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
 				DFC9850D20F5B77F0047EAE7 /* MainMenuCVC.m in Sources */,
+				DFA3790F20FC3C76004D4C1B /* LectVC.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,14 +335,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DFB25CAF20F5B33900F493F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFB25CB020F5B33900F493F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DFB25CB420F5B33900F493F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

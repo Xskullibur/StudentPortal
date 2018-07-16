@@ -59,9 +59,9 @@ static NSString * const reuseIdentifier = @"Cell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
-    
-    return cell;
+//Configure the cell
+
+  return cell;
 }
 
 #pragma mark <UICollectionViewDelegate>
@@ -106,6 +106,11 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (IBAction)lecturerBtn:(id)sender {
+    UIStoryboard *LectStoryboard = [UIStoryboard storyboardWithName:@"Lect" bundle:nil];
+    UIViewController *LectVC = [LectStoryboard instantiateViewControllerWithIdentifier:@"Lect"];
+    LectVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self presentViewController:LectVC animated:YES completion:nil];
 }
 
 - (IBAction)myConnectionBtn:(id)sender {
