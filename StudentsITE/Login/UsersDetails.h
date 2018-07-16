@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface UsersDetails : NSObject
- 
-@property (nonatomic, strong) NSMutableArray* userInfo;
 
--(id)init;
+
+@property(nonatomic) NSInteger UserIndex;
+-(BOOL) LoginWithNRIC:(NSString*) NRIC andPassword:(NSString*)Password;
+
+@property (nonatomic) NSMutableArray* UserInfo;
 
 @end

@@ -110,8 +110,6 @@
 		DFB25CA820F5B33900F493F3 /* StudentsITE */ = {
 			isa = PBXGroup;
 			children = (
-				DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */,
-				DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */,
 				DFB25CA920F5B33900F493F3 /* AppDelegate.h */,
 				DFB25CAA20F5B33900F493F3 /* AppDelegate.m */,
 				DFB25CAC20F5B33900F493F3 /* ViewController.h */,
@@ -146,6 +144,8 @@
 		DFB25CDB20F5B45600F493F3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */,
+				DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */,
 				DFB25CDC20F5B5BB00F493F3 /* Login.storyboard */,
 				DFB25CDE20F5B5DA00F493F3 /* LoginVC.h */,
 				DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */,

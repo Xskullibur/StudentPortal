@@ -10,10 +10,11 @@
 #import "UsersDetails.h"
 
 @interface LoginVC : UIViewController
-{
-}
+
 @property (weak, nonatomic) IBOutlet UITextField *txtUser;
 @property (weak, nonatomic) IBOutlet UITextField *txtPass;
 - (IBAction)btnLogin:(id)sender;
+
+@property(strong, nonatomic) UsersDetails* userDetails;
 
 @end
