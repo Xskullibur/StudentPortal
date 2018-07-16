@@ -46,13 +46,13 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
+//#warning Incomplete implementation, return the number of sections
     return 0;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
+//#warning Incomplete implementation, return the number of items
     return 0;
 }
 
@@ -95,4 +95,25 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
+- (IBAction)campusMapBtn:(id)sender {
+    
+}
+
+- (IBAction)examCountdownBtn:(id)sender {
+}
+
+- (IBAction)gpaCalcBtn:(id)sender {
+}
+
+- (IBAction)lecturerBtn:(id)sender {
+}
+
+- (IBAction)myConnectionBtn:(id)sender {
+}
+
+- (IBAction)studentInfoBtn:(id)sender {
+}
+
+- (IBAction)timetableBtn:(id)sender {
+}
 @end

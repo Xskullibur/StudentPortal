@@ -10,4 +10,12 @@
 
 @interface MainMenuCVC : UICollectionViewController
 
+- (IBAction)campusMapBtn:(id)sender;
+- (IBAction)examCountdownBtn:(id)sender;
+- (IBAction)gpaCalcBtn:(id)sender;
+- (IBAction)lecturerBtn:(id)sender;
+- (IBAction)myConnectionBtn:(id)sender;
+- (IBAction)studentInfoBtn:(id)sender;
+- (IBAction)timetableBtn:(id)sender;
+
 @end
