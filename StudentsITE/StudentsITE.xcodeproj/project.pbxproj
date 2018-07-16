@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFA3790920FC2AE9004D4C1B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA3790820FC2AE9004D4C1B /* logo.png */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
 		DFB25CAE20F5B33900F493F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAD20F5B33900F493F3 /* ViewController.m */; };
 		DFB25CB120F5B33900F493F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CAF20F5B33900F493F3 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DFA3790820FC2AE9004D4C1B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "../../../../../../../Volumes/XSKULLIBUR/MAE Phase Test/Logo/logo.png"; sourceTree = "<group>"; };
 		DFB25CA620F5B33900F493F3 /* StudentsITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsITE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB25CA920F5B33900F493F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFB25CAA20F5B33900F493F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		DFC9850E20F5BF9E0047EAE7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DFA3790820FC2AE9004D4C1B /* logo.png */,
 				DFC9850F20F5C1160047EAE7 /* StudnetInfo.png */,
 			);
 			path = Sources;
@@ -267,6 +270,7 @@
 			files = (
 				DFC9851020F5C1160047EAE7 /* StudnetInfo.png in Resources */,
 				DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */,
+				DFA3790920FC2AE9004D4C1B /* logo.png in Resources */,
 				DFC9850A20F5B6C90047EAE7 /* MainMenu.storyboard in Resources */,
 				DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */,
 				DFB25CB120F5B33900F493F3 /* Main.storyboard in Resources */,
