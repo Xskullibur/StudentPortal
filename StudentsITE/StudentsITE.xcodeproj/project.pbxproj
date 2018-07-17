@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF4BEE5F20FD805600BF8849 /* LectTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEE5E20FD805600BF8849 /* LectTVC.m */; };
+		DF4BEE6220FD82E600BF8849 /* MAETVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEE6120FD82E600BF8849 /* MAETVC.m */; };
+		DF4BEE6520FD838E00BF8849 /* IADTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEE6420FD838E00BF8849 /* IADTVC.m */; };
+		DF4BEE6820FD83DB00BF8849 /* LifeskillsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEE6720FD83DB00BF8849 /* LifeskillsTVC.m */; };
+		DF4BEE6B20FD840000BF8849 /* SWTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEE6A20FD840000BF8849 /* SWTVC.m */; };
 		DFA3790C20FC3C59004D4C1B /* Lect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA3790B20FC3C59004D4C1B /* Lect.storyboard */; };
-		DFA3790F20FC3C76004D4C1B /* LectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA3790E20FC3C76004D4C1B /* LectVC.m */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
 		DFB25CAE20F5B33900F493F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAD20F5B33900F493F3 /* ViewController.m */; };
 		DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB220F5B33900F493F3 /* Assets.xcassets */; };
@@ -38,9 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF4BEE5D20FD805600BF8849 /* LectTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LectTVC.h; sourceTree = "<group>"; };
+		DF4BEE5E20FD805600BF8849 /* LectTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LectTVC.m; sourceTree = "<group>"; };
+		DF4BEE6020FD82E600BF8849 /* MAETVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAETVC.h; sourceTree = "<group>"; };
+		DF4BEE6120FD82E600BF8849 /* MAETVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAETVC.m; sourceTree = "<group>"; };
+		DF4BEE6320FD838E00BF8849 /* IADTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IADTVC.h; sourceTree = "<group>"; };
+		DF4BEE6420FD838E00BF8849 /* IADTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IADTVC.m; sourceTree = "<group>"; };
+		DF4BEE6620FD83DB00BF8849 /* LifeskillsTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeskillsTVC.h; sourceTree = "<group>"; };
+		DF4BEE6720FD83DB00BF8849 /* LifeskillsTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeskillsTVC.m; sourceTree = "<group>"; };
+		DF4BEE6920FD840000BF8849 /* SWTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWTVC.h; sourceTree = "<group>"; };
+		DF4BEE6A20FD840000BF8849 /* SWTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWTVC.m; sourceTree = "<group>"; };
 		DFA3790B20FC3C59004D4C1B /* Lect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lect.storyboard; sourceTree = "<group>"; };
-		DFA3790D20FC3C76004D4C1B /* LectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LectVC.h; sourceTree = "<group>"; };
-		DFA3790E20FC3C76004D4C1B /* LectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LectVC.m; sourceTree = "<group>"; };
 		DFB25CA620F5B33900F493F3 /* StudentsITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsITE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB25CA920F5B33900F493F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFB25CAA20F5B33900F493F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,8 +102,16 @@
 			isa = PBXGroup;
 			children = (
 				DFA3790B20FC3C59004D4C1B /* Lect.storyboard */,
-				DFA3790D20FC3C76004D4C1B /* LectVC.h */,
-				DFA3790E20FC3C76004D4C1B /* LectVC.m */,
+				DF4BEE6920FD840000BF8849 /* SWTVC.h */,
+				DF4BEE6A20FD840000BF8849 /* SWTVC.m */,
+				DF4BEE6620FD83DB00BF8849 /* LifeskillsTVC.h */,
+				DF4BEE6720FD83DB00BF8849 /* LifeskillsTVC.m */,
+				DF4BEE6320FD838E00BF8849 /* IADTVC.h */,
+				DF4BEE6420FD838E00BF8849 /* IADTVC.m */,
+				DF4BEE6020FD82E600BF8849 /* MAETVC.h */,
+				DF4BEE6120FD82E600BF8849 /* MAETVC.m */,
+				DF4BEE5D20FD805600BF8849 /* LectTVC.h */,
+				DF4BEE5E20FD805600BF8849 /* LectTVC.m */,
 			);
 			path = "Lect Info";
 			sourceTree = "<group>";
@@ -295,11 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4BEE5F20FD805600BF8849 /* LectTVC.m in Sources */,
+				DF4BEE6820FD83DB00BF8849 /* LifeskillsTVC.m in Sources */,
 				DFB25CAE20F5B33900F493F3 /* ViewController.m in Sources */,
+				DF4BEE6B20FD840000BF8849 /* SWTVC.m in Sources */,
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
+				DF4BEE6220FD82E600BF8849 /* MAETVC.m in Sources */,
 				DFC9850D20F5B77F0047EAE7 /* MainMenuCVC.m in Sources */,
-				DFA3790F20FC3C76004D4C1B /* LectVC.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
+				DF4BEE6520FD838E00BF8849 /* IADTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
