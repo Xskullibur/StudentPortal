@@ -16,6 +16,9 @@
 		DFB25CCE20F5B33900F493F3 /* StudentsITEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CCD20F5B33900F493F3 /* StudentsITEUITests.m */; };
 		DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CDC20F5B5BB00F493F3 /* Login.storyboard */; };
 		DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */; };
+		FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */; };
+		FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */; };
+		FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,11 @@
 		DFB25CDC20F5B5BB00F493F3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DFB25CDE20F5B5DA00F493F3 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		FEF0AE1F20FE1F59004F72C8 /* MainMenuCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuCVC.h; sourceTree = "<group>"; };
+		FEF0AE2020FE1F59004F72C8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
+		FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuCVC.m; sourceTree = "<group>"; };
+		FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
+				FEF0AE1C20FE1F1E004F72C8 /* Main Menu */,
 				DFB25CDB20F5B45600F493F3 /* Login */,
 				DFB25CA820F5B33900F493F3 /* StudentsITE */,
 				DFB25CC120F5B33900F493F3 /* StudentsITETests */,
@@ -143,6 +152,18 @@
 				DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		FEF0AE1C20FE1F1E004F72C8 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FEF0AE2020FE1F59004F72C8 /* CollectionViewCell.h */,
+				FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */,
+				FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */,
+				FEF0AE1F20FE1F59004F72C8 /* MainMenuCVC.h */,
+				FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */,
+			);
+			path = "Main Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */,
 				DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */,
 				DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */,
 				DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */,
@@ -278,10 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */,
 				DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */,
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
 				DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
+				FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
