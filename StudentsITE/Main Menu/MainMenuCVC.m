@@ -82,7 +82,38 @@ static NSString * const reuseIdentifier = @"Cell";
 //When Finger Tapped
 -(void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath{
 
-    
+    switch (indexPath.row) {
+        case 0:
+            //Campus Map
+            break;
+            
+        case 1:
+            //Exam CountDown
+            break;
+            
+        case 2:
+            //GPA Calculator
+            break;
+            
+        case 3:
+            //Exam CountDown
+            break;
+            
+        case 4:
+            //Lecturer Info
+            break;
+            
+        case 5:
+            //myConneXion
+            break;
+            
+        case 6:
+            //Schedule
+            break;
+            
+        default:
+            break;
+    }
     
 }
 

@@ -55,7 +55,15 @@
                             <outlet property="delegate" destination="MCP-y8-H6U" id="TaP-LT-da7"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Main Menu" id="ZSv-C1-Csl"/>
+                    <navigationItem key="navigationItem" title="Main Menu" id="ZSv-C1-Csl">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="98e-um-KKY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5gG-Bl-pCn">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjg-VM-1Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
