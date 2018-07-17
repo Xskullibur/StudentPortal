@@ -23,6 +23,9 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"Value Passed");
+    NSLog(@"%ld", (long)_userIndex);
+    
     ButtonLabels = @[@"Campus Map", @"Exam Countdown", @"GPA Calculator", @"Lecturer Info", @"myConneXion", @"Student Info", @"Schedule"];
     Buttons = @[@"campusMap", @"examCountdown", @"gpaCalculator", @"lecturer", @"myConneXion", @"studentInfo", @"timetable"];
     
@@ -146,4 +149,14 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
+- (IBAction)LogoutBtn:(id)sender {
+    
+    UIStoryboard *loginScreen = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    UIViewController *LoginVC = [loginScreen instantiateViewControllerWithIdentifier:@"Login"];
+    LoginVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    
+    [self presentViewController:LoginVC animated:YES completion:nil];
+    
+    //[[UIApplication sharedApplication].keyWindow setRootViewController:LoginVC];
+}
 @end

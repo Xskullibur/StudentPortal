@@ -19,6 +19,7 @@
 		FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */; };
 		FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */; };
 		FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */; };
+		FEF0AE2A20FE2623004F72C8 /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2920FE2623004F72C8 /* Alert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
 		FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuCVC.m; sourceTree = "<group>"; };
 		FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		FEF0AE2820FE2623004F72C8 /* Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
+		FEF0AE2920FE2623004F72C8 /* Alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
+				FEF0AE2720FE25F6004F72C8 /* Functions */,
 				FEF0AE1C20FE1F1E004F72C8 /* Main Menu */,
 				DFB25CDB20F5B45600F493F3 /* Login */,
 				DFB25CA820F5B33900F493F3 /* StudentsITE */,
@@ -164,6 +168,15 @@
 				FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */,
 			);
 			path = "Main Menu";
+			sourceTree = "<group>";
+		};
+		FEF0AE2720FE25F6004F72C8 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				FEF0AE2820FE2623004F72C8 /* Alert.h */,
+				FEF0AE2920FE2623004F72C8 /* Alert.m */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +317,7 @@
 				DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */,
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
 				DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */,
+				FEF0AE2A20FE2623004F72C8 /* Alert.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
 				FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "LoginVC.h"
+#import "MainMenuCVC.h"
 #import "UsersDetails.h"
 
 
@@ -40,13 +41,42 @@
 
 - (IBAction)btnLogin:(id)sender{
     
-    if ([_userDetails LoginWithNRIC:_txtUser.text andPassword:_txtPass.text] == 1) {
+    if ([_userDetails LoginWithNRIC:[_txtUser.text uppercaseString] andPassword:_txtPass.text] == 1) {
+        
+        //Debug Info
         NSLog(@"Success");
         NSLog(@"%ld", (long)_userDetails.UserIndex);
+        
+        UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
+        MainMenuCVC *mainVC = [mainScreen instantiateViewControllerWithIdentifier:@"MainMenu"];
+        mainVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        //mainVC.userIndex = userIndex;
+        
+        [self presentViewController:mainVC animated:YES completion:nil];
     }
     else{
-        NSLog(@"Fail");
+
+        //Debug Info
+        NSLog(@"Login Failed");
+        
+        //Failed Alert
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Login Failed" message:@"Invalid NRIC or Password, Please Try Again..." preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        
+        [alert addAction: okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+        
     }
     
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [_txtPass resignFirstResponder];
+    [_txtUser resignFirstResponder];
+    [[self.view window] endEditing: YES];
+    
+}
+
 @end

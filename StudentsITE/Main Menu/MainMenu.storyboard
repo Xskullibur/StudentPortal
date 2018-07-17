@@ -61,6 +61,9 @@
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="LogoutBtn:" destination="MCP-y8-H6U" eventType="touchUpInside" id="RgC-g2-kVy"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>

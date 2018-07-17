@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainMenuCVC : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource> 
+@interface MainMenuCVC : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property (nonatomic) long userIndex;
+- (IBAction)LogoutBtn:(id)sender;
 
 @end
