@@ -7,8 +7,12 @@
 //
 
 #import "MainMenuCVC.h"
+#import "CollectionViewCell.h"
 
-@interface MainMenuCVC ()
+@interface MainMenuCVC (){
+    NSArray *Buttons;
+    NSArray *ButtonLabels;
+}
 
 @end
 
@@ -19,7 +23,10 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
+    ButtonLabels = @[@"Campus Map", @"Exam CountDown", @"GPA Calculator", @"Lecturer Info", @"myConneXion", @"Student Info", @"Schedule"];
+    Buttons = @[@"campusMap", @"examCountdown", @"gpaCalculator", @"lecturer", @"myConneXion", @"studentInfo", @"timetable"];
+    
+    // Uncommen t the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
@@ -46,25 +53,38 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+//#warning Incomplete implementation, return the number of sections
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+//#warning Incomplete implementation, return the number of items
+    return Buttons.count;;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    CollectionViewCell  *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
+    
+    //Cell Images
+    cell.buttonImage.image = [UIImage imageNamed:Buttons[indexPath.row]];
+    
+    //Cell Labels
+    cell.buttonLbl.text = ButtonLabels[indexPath.row ];
     
     return cell;
 }
 
 #pragma mark <UICollectionViewDelegate>
+
+//When Finger Tapped
+-(void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath{
+
+    
+    
+}
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking

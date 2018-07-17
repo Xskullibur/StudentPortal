@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainMenuCVC : UICollectionViewController
+@interface MainMenuCVC : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource> 
 
 @end
