@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF2781BD20FEEF07009BA41A /* Lect Info in Resources */ = {isa = PBXBuildFile; fileRef = DF2781BC20FEEF06009BA41A /* Lect Info */; };
+		DF2781CA20FEF01F009BA41A /* MAETVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C020FEF01F009BA41A /* MAETVC.m */; };
+		DF2781CB20FEF01F009BA41A /* IADTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C120FEF01F009BA41A /* IADTVC.m */; };
+		DF2781CC20FEF01F009BA41A /* LifeskillsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C420FEF01F009BA41A /* LifeskillsTVC.m */; };
+		DF2781CD20FEF01F009BA41A /* SWTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C520FEF01F009BA41A /* SWTVC.m */; };
+		DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C720FEF01F009BA41A /* LectTVC.m */; };
+		DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2781C820FEF01F009BA41A /* Lect.storyboard */; };
 		DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
 		DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB220F5B33900F493F3 /* Assets.xcassets */; };
@@ -41,7 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DF2781BC20FEEF06009BA41A /* Lect Info */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Lect Info"; sourceTree = "<group>"; };
+		DF2781BF20FEF01F009BA41A /* LifeskillsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeskillsTVC.h; sourceTree = "<group>"; };
+		DF2781C020FEF01F009BA41A /* MAETVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAETVC.m; sourceTree = "<group>"; };
+		DF2781C120FEF01F009BA41A /* IADTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IADTVC.m; sourceTree = "<group>"; };
+		DF2781C220FEF01F009BA41A /* MAETVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAETVC.h; sourceTree = "<group>"; };
+		DF2781C320FEF01F009BA41A /* LectTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LectTVC.h; sourceTree = "<group>"; };
+		DF2781C420FEF01F009BA41A /* LifeskillsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeskillsTVC.m; sourceTree = "<group>"; };
+		DF2781C520FEF01F009BA41A /* SWTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTVC.m; sourceTree = "<group>"; };
+		DF2781C620FEF01F009BA41A /* IADTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IADTVC.h; sourceTree = "<group>"; };
+		DF2781C720FEF01F009BA41A /* LectTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LectTVC.m; sourceTree = "<group>"; };
+		DF2781C820FEF01F009BA41A /* Lect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lect.storyboard; sourceTree = "<group>"; };
+		DF2781C920FEF01F009BA41A /* SWTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTVC.h; sourceTree = "<group>"; };
 		DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersDetails.h; sourceTree = "<group>"; };
 		DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersDetails.m; sourceTree = "<group>"; };
 		DFB25CA620F5B33900F493F3 /* StudentsITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsITE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,10 +109,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF2781BE20FEEFE1009BA41A /* Lect Info */ = {
+			isa = PBXGroup;
+			children = (
+				DF2781C620FEF01F009BA41A /* IADTVC.h */,
+				DF2781C120FEF01F009BA41A /* IADTVC.m */,
+				DF2781C820FEF01F009BA41A /* Lect.storyboard */,
+				DF2781C320FEF01F009BA41A /* LectTVC.h */,
+				DF2781C720FEF01F009BA41A /* LectTVC.m */,
+				DF2781BF20FEF01F009BA41A /* LifeskillsTVC.h */,
+				DF2781C420FEF01F009BA41A /* LifeskillsTVC.m */,
+				DF2781C220FEF01F009BA41A /* MAETVC.h */,
+				DF2781C020FEF01F009BA41A /* MAETVC.m */,
+				DF2781C920FEF01F009BA41A /* SWTVC.h */,
+				DF2781C520FEF01F009BA41A /* SWTVC.m */,
+			);
+			path = "Lect Info";
+			sourceTree = "<group>";
+		};
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
-				DF2781BC20FEEF06009BA41A /* Lect Info */,
+				DF2781BE20FEEFE1009BA41A /* Lect Info */,
 				FEF0AE2720FE25F6004F72C8 /* Functions */,
 				FEF0AE1C20FE1F1E004F72C8 /* Main Menu */,
 				DFB25CDB20F5B45600F493F3 /* Login */,
@@ -288,8 +321,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2781BD20FEEF07009BA41A /* Lect Info in Resources */,
 				FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */,
+				DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */,
 				DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */,
 				DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */,
 				DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */,
@@ -320,9 +353,14 @@
 				FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */,
 				DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */,
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
+				DF2781CB20FEF01F009BA41A /* IADTVC.m in Sources */,
+				DF2781CA20FEF01F009BA41A /* MAETVC.m in Sources */,
+				DF2781CC20FEF01F009BA41A /* LifeskillsTVC.m in Sources */,
 				DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */,
 				FEF0AE2A20FE2623004F72C8 /* Alert.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
+				DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */,
+				DF2781CD20FEF01F009BA41A /* SWTVC.m in Sources */,
 				FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
