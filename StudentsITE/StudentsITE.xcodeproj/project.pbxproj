@@ -109,7 +109,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF2781AA20FEEC85009BA41A /* Lecturer Info */ = {
+		DF2781AA20FEEC85009BA41A /* Lect Info */ = {
 			isa = PBXGroup;
 			children = (
 				DF2781AF20FEECBB009BA41A /* IADTVC.h */,
@@ -124,13 +124,14 @@
 				DF2781B320FEECBB009BA41A /* SWTVC.h */,
 				DF2781B220FEECBB009BA41A /* SWTVC.m */,
 			);
+			name = "Lect Info";
 			path = "Lecturer Info";
 			sourceTree = "<group>";
 		};
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
-				DF2781AA20FEEC85009BA41A /* Lecturer Info */,
+				DF2781AA20FEEC85009BA41A /* Lect Info */,
 				FEF0AE2720FE25F6004F72C8 /* Functions */,
 				FEF0AE1C20FE1F1E004F72C8 /* Main Menu */,
 				DFB25CDB20F5B45600F493F3 /* Login */,
