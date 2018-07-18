@@ -13,6 +13,7 @@
 		DF2781CD20FEF01F009BA41A /* SWTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C520FEF01F009BA41A /* SWTVC.m */; };
 		DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C720FEF01F009BA41A /* LectTVC.m */; };
 		DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2781C820FEF01F009BA41A /* Lect.storyboard */; };
+		DF2781D520FF14D3009BA41A /* AboutTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781D420FF14D3009BA41A /* AboutTVC.m */; };
 		DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
 		DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB220F5B33900F493F3 /* Assets.xcassets */; };
@@ -58,6 +59,8 @@
 		DF2781C720FEF01F009BA41A /* LectTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LectTVC.m; sourceTree = "<group>"; };
 		DF2781C820FEF01F009BA41A /* Lect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lect.storyboard; sourceTree = "<group>"; };
 		DF2781C920FEF01F009BA41A /* SWTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTVC.h; sourceTree = "<group>"; };
+		DF2781D320FF14D3009BA41A /* AboutTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutTVC.h; sourceTree = "<group>"; };
+		DF2781D420FF14D3009BA41A /* AboutTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutTVC.m; sourceTree = "<group>"; };
 		DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersDetails.h; sourceTree = "<group>"; };
 		DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersDetails.m; sourceTree = "<group>"; };
 		DFB25CA620F5B33900F493F3 /* StudentsITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsITE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				DFDA2B9C20FEFCC4006BFBC1 /* FAS.storyboard */,
+				DF2781D320FF14D3009BA41A /* AboutTVC.h */,
+				DF2781D420FF14D3009BA41A /* AboutTVC.m */,
 			);
 			path = FAS;
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 				FEF0AE2A20FE2623004F72C8 /* Alert.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
 				DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */,
+				DF2781D520FF14D3009BA41A /* AboutTVC.m in Sources */,
 				DF2781CD20FEF01F009BA41A /* SWTVC.m in Sources */,
 				FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */,
 			);
