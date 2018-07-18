@@ -22,6 +22,7 @@
 		DFB25CCE20F5B33900F493F3 /* StudentsITEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CCD20F5B33900F493F3 /* StudentsITEUITests.m */; };
 		DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CDC20F5B5BB00F493F3 /* Login.storyboard */; };
 		DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */; };
+		DFDA2B9D20FEFCC4006BFBC1 /* FAS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDA2B9C20FEFCC4006BFBC1 /* FAS.storyboard */; };
 		FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */; };
 		FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */; };
 		FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */; };
@@ -75,6 +76,7 @@
 		DFB25CDC20F5B5BB00F493F3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DFB25CDE20F5B5DA00F493F3 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		DFDA2B9C20FEFCC4006BFBC1 /* FAS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FAS.storyboard; sourceTree = "<group>"; };
 		FEF0AE1F20FE1F59004F72C8 /* MainMenuCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuCVC.h; sourceTree = "<group>"; };
 		FEF0AE2020FE1F59004F72C8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
+				DFDA2B9B20FEFCA1006BFBC1 /* FAS */,
 				DF2781BE20FEEFE1009BA41A /* Lect Info */,
 				FEF0AE2720FE25F6004F72C8 /* Functions */,
 				FEF0AE1C20FE1F1E004F72C8 /* Main Menu */,
@@ -192,6 +195,14 @@
 				DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		DFDA2B9B20FEFCA1006BFBC1 /* FAS */ = {
+			isa = PBXGroup;
+			children = (
+				DFDA2B9C20FEFCC4006BFBC1 /* FAS.storyboard */,
+			);
+			path = FAS;
 			sourceTree = "<group>";
 		};
 		FEF0AE1C20FE1F1E004F72C8 /* Main Menu */ = {
@@ -324,6 +335,7 @@
 				FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */,
 				DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */,
 				DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */,
+				DFDA2B9D20FEFCC4006BFBC1 /* FAS.storyboard in Resources */,
 				DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */,
 				DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */,
 			);
