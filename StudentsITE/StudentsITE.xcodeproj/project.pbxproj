@@ -13,7 +13,6 @@
 		DF2781CD20FEF01F009BA41A /* SWTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C520FEF01F009BA41A /* SWTVC.m */; };
 		DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C720FEF01F009BA41A /* LectTVC.m */; };
 		DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2781C820FEF01F009BA41A /* Lect.storyboard */; };
-		DF2781D520FF14D3009BA41A /* AboutTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781D420FF14D3009BA41A /* AboutTVC.m */; };
 		DF57216720FF1D8C00EF8B82 /* FamilyMember.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57216520FF1D8C00EF8B82 /* FamilyMember.m */; };
 		DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
@@ -25,7 +24,7 @@
 		DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CDC20F5B5BB00F493F3 /* Login.storyboard */; };
 		DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */; };
 		DFDA2B9D20FEFCC4006BFBC1 /* FAS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDA2B9C20FEFCC4006BFBC1 /* FAS.storyboard */; };
-		DFF7EF3820FF2A1D0079D28A /* InquiryTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF7EF3720FF2A1D0079D28A /* InquiryTVC.m */; };
+		FE0E58CD2104504A00BB1268 /* EnquiryTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E58CC2104504A00BB1268 /* EnquiryTVC.m */; };
 		FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */; };
 		FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */; };
 		FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */; };
@@ -61,8 +60,6 @@
 		DF2781C720FEF01F009BA41A /* LectTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LectTVC.m; sourceTree = "<group>"; };
 		DF2781C820FEF01F009BA41A /* Lect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lect.storyboard; sourceTree = "<group>"; };
 		DF2781C920FEF01F009BA41A /* SWTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTVC.h; sourceTree = "<group>"; };
-		DF2781D320FF14D3009BA41A /* AboutTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutTVC.h; sourceTree = "<group>"; };
-		DF2781D420FF14D3009BA41A /* AboutTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutTVC.m; sourceTree = "<group>"; };
 		DF57216520FF1D8C00EF8B82 /* FamilyMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyMember.m; sourceTree = "<group>"; };
 		DF57216620FF1D8C00EF8B82 /* FamilyMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyMember.h; sourceTree = "<group>"; };
 		DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersDetails.h; sourceTree = "<group>"; };
@@ -84,8 +81,8 @@
 		DFB25CDE20F5B5DA00F493F3 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		DFDA2B9C20FEFCC4006BFBC1 /* FAS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FAS.storyboard; sourceTree = "<group>"; };
-		DFF7EF3620FF2A1D0079D28A /* InquiryTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InquiryTVC.h; sourceTree = "<group>"; };
-		DFF7EF3720FF2A1D0079D28A /* InquiryTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InquiryTVC.m; sourceTree = "<group>"; };
+		FE0E58CB2104504A00BB1268 /* EnquiryTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnquiryTVC.h; sourceTree = "<group>"; };
+		FE0E58CC2104504A00BB1268 /* EnquiryTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnquiryTVC.m; sourceTree = "<group>"; };
 		FEF0AE1F20FE1F59004F72C8 /* MainMenuCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuCVC.h; sourceTree = "<group>"; };
 		FEF0AE2020FE1F59004F72C8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
@@ -209,13 +206,11 @@
 		DFDA2B9B20FEFCA1006BFBC1 /* FAS */ = {
 			isa = PBXGroup;
 			children = (
+				FE0E58CB2104504A00BB1268 /* EnquiryTVC.h */,
+				FE0E58CC2104504A00BB1268 /* EnquiryTVC.m */,
 				DF57216620FF1D8C00EF8B82 /* FamilyMember.h */,
 				DF57216520FF1D8C00EF8B82 /* FamilyMember.m */,
 				DFDA2B9C20FEFCC4006BFBC1 /* FAS.storyboard */,
-				DF2781D320FF14D3009BA41A /* AboutTVC.h */,
-				DF2781D420FF14D3009BA41A /* AboutTVC.m */,
-				DFF7EF3620FF2A1D0079D28A /* InquiryTVC.h */,
-				DFF7EF3720FF2A1D0079D28A /* InquiryTVC.m */,
 			);
 			path = FAS;
 			sourceTree = "<group>";
@@ -384,12 +379,11 @@
 				DF2781CB20FEF01F009BA41A /* IADTVC.m in Sources */,
 				DF2781CA20FEF01F009BA41A /* MAETVC.m in Sources */,
 				DF2781CC20FEF01F009BA41A /* LifeskillsTVC.m in Sources */,
-				DFF7EF3820FF2A1D0079D28A /* InquiryTVC.m in Sources */,
 				DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */,
 				FEF0AE2A20FE2623004F72C8 /* Alert.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
 				DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */,
-				DF2781D520FF14D3009BA41A /* AboutTVC.m in Sources */,
+				FE0E58CD2104504A00BB1268 /* EnquiryTVC.m in Sources */,
 				DF2781CD20FEF01F009BA41A /* SWTVC.m in Sources */,
 				FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */,
 			);

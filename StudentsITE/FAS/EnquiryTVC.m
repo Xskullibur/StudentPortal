@@ -1,18 +1,18 @@
 //
-//  AboutTVC.m
+//  EnquiryTVC.m
 //  StudentsITE
 //
-//  Created by Student2 on 18/7/18.
+//  Created by Alson on 21/7/18.
 //  Copyright © 2018 Student2. All rights reserved.
 //
 
-#import "AboutTVC.h"
+#import "EnquiryTVC.h"
 
-@interface AboutTVC ()
+@interface EnquiryTVC ()
 
 @end
 
-@implementation AboutTVC
+@implementation EnquiryTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,13 +32,13 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+//#warning Incomplete implementation, return the number of sections
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+//#warning Incomplete implementation, return the number of rows
+    return 3;
 }
 
 /*
