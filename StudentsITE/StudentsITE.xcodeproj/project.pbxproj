@@ -14,8 +14,9 @@
 		DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C720FEF01F009BA41A /* LectTVC.m */; };
 		DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2781C820FEF01F009BA41A /* Lect.storyboard */; };
 		DF2781DA20FF1CBA009BA41A /* GPACalc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2781D920FF1CBA009BA41A /* GPACalc.storyboard */; };
+		DF3F4090210572F5007B8564 /* GPAResultTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3F408F210572F5007B8564 /* GPAResultTVC.m */; };
+		DF6A6520210565BA00F9FC02 /* GPACalcTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6A651F210565BA00F9FC02 /* GPACalcTVC.m */; };
 		DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */; };
-		DF9404B920FF265300806ABB /* GPACalcVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9404B820FF265300806ABB /* GPACalcVC.m */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
 		DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB220F5B33900F493F3 /* Assets.xcassets */; };
 		DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB420F5B33900F493F3 /* LaunchScreen.storyboard */; };
@@ -60,10 +61,12 @@
 		DF2781C820FEF01F009BA41A /* Lect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lect.storyboard; sourceTree = "<group>"; };
 		DF2781C920FEF01F009BA41A /* SWTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTVC.h; sourceTree = "<group>"; };
 		DF2781D920FF1CBA009BA41A /* GPACalc.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GPACalc.storyboard; sourceTree = "<group>"; };
+		DF3F408E210572F5007B8564 /* GPAResultTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPAResultTVC.h; sourceTree = "<group>"; };
+		DF3F408F210572F5007B8564 /* GPAResultTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPAResultTVC.m; sourceTree = "<group>"; };
+		DF6A651E210565BA00F9FC02 /* GPACalcTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPACalcTVC.h; sourceTree = "<group>"; };
+		DF6A651F210565BA00F9FC02 /* GPACalcTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPACalcTVC.m; sourceTree = "<group>"; };
 		DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersDetails.h; sourceTree = "<group>"; };
 		DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersDetails.m; sourceTree = "<group>"; };
-		DF9404B720FF265300806ABB /* GPACalcVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPACalcVC.h; sourceTree = "<group>"; };
-		DF9404B820FF265300806ABB /* GPACalcVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPACalcVC.m; sourceTree = "<group>"; };
 		DFB25CA620F5B33900F493F3 /* StudentsITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsITE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB25CA920F5B33900F493F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFB25CAA20F5B33900F493F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,8 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				DF2781D920FF1CBA009BA41A /* GPACalc.storyboard */,
-				DF9404B720FF265300806ABB /* GPACalcVC.h */,
-				DF9404B820FF265300806ABB /* GPACalcVC.m */,
+				DF3F408E210572F5007B8564 /* GPAResultTVC.h */,
+				DF3F408F210572F5007B8564 /* GPAResultTVC.m */,
+				DF6A651E210565BA00F9FC02 /* GPACalcTVC.h */,
+				DF6A651F210565BA00F9FC02 /* GPACalcTVC.m */,
 			);
 			path = "GPA Calc";
 			sourceTree = "<group>";
@@ -370,14 +375,15 @@
 				FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */,
 				DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */,
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
-				DF9404B920FF265300806ABB /* GPACalcVC.m in Sources */,
 				DF2781CB20FEF01F009BA41A /* IADTVC.m in Sources */,
 				DF2781CA20FEF01F009BA41A /* MAETVC.m in Sources */,
+				DF3F4090210572F5007B8564 /* GPAResultTVC.m in Sources */,
 				DF2781CC20FEF01F009BA41A /* LifeskillsTVC.m in Sources */,
 				DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */,
 				FEF0AE2A20FE2623004F72C8 /* Alert.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
 				DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */,
+				DF6A6520210565BA00F9FC02 /* GPACalcTVC.m in Sources */,
 				DF2781CD20FEF01F009BA41A /* SWTVC.m in Sources */,
 				FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */,
 			);
@@ -541,7 +547,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.ite.StudentsITE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -556,7 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.ite.StudentsITE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
