@@ -7,6 +7,7 @@
 //
 
 #import "FamilyInfoTVC.h"
+#import "FamilyMemberCell.h"
 
 @interface FamilyInfoTVC ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _Family = [[NSMutableArray alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -38,18 +41,28 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of rows
-    return 3;
+    return 1;
 }
 
-/*
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 130;
+    
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    return @"Family Member Info:";
+    
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -95,4 +108,46 @@
 }
 */
 
+- (IBAction)doneBtn:(id)sender {
+    
+    [_Family removeAllObjects];
+    
+    for (int i = 0; i < _NoOfFamily; i++) {
+        
+        FamilyMemberCell* cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:i]];
+        
+        //If Cell Is Empty
+        if ([cell.nameTxt.text isEqual: @""] || [cell.relationshipTxt.text isEqual: @""] || [cell.gmiTxt.text isEqual: @""]) {
+            
+            //Empty Alert
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Missing Fields" message:@"Please Fill In All Fields!" preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+            
+            [alert addAction: okButton];
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            //Stop Loop
+            break;
+            
+        }
+        else{
+            
+            //Continue Adding
+            FamilyMember* member = [[FamilyMember alloc] initWithName:cell.nameTxt.text andRelationship:cell.relationshipTxt.text andGMI:[cell.gmiTxt.text doubleValue]];
+            [_Family addObject:member];
+            
+        }
+        
+    }
+    
+    for (FamilyMember* member in _Family) {
+        
+        NSLog(@"%@ Name: ", member.Name);
+        NSLog(@"%@ Relationship: ", member.Relationship);
+        NSLog(@"%ld GMI: ", (long)member.GMI);
+        
+    }
+    
+}
 @end
