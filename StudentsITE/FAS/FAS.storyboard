@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="flb-WC-wtu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="flb-WC-wtu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Georgia.ttf">
+            <string>Georgia</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Financial Assistance Scheme-->
         <scene sceneID="LJf-Id-YcS">
@@ -196,7 +202,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6Y-Ku-PWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="486"/>
+            <point key="canvasLocation" x="1201" y="685"/>
         </scene>
         <!--EnquiryTVC-->
         <scene sceneID="lPd-jd-oyD">
@@ -272,6 +278,9 @@
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="ContinueBtn:" destination="xK4-ay-RzJ" eventType="touchUpInside" id="9GO-Gr-QNN"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -284,10 +293,86 @@
                             <outlet property="delegate" destination="xK4-ay-RzJ" id="USf-mZ-dJI"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="scholarshipSW" destination="Fli-VB-ZnC" id="LCW-xk-D08"/>
+                        <outlet property="singaporeanSW" destination="1ha-vO-vv1" id="aKy-6w-l8l"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tkw-Ym-eBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2154" y="485"/>
+            <point key="canvasLocation" x="1201" y="1580"/>
+        </scene>
+        <!--Family Members-->
+        <scene sceneID="b0B-m0-jOf">
+            <objects>
+                <viewController storyboardIdentifier="NoOfFamilyVC" id="QwQ-RN-fgw" customClass="NoOfFamilyVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJp-XC-r75">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="999" translatesAutoresizingMaskIntoConstraints="NO" id="Xf8-Pn-Yqe">
+                                <rect key="frame" x="140" y="332" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperClicked:" destination="QwQ-RN-fgw" eventType="valueChanged" id="NZq-dX-3Or"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Family Members: 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAM-Af-BhE">
+                                <rect key="frame" x="16" y="303" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqW-Ht-F5u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Family Members" id="k8N-Zx-HaS">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="AD6-sk-3yL">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ATk-yP-ubn">
+                                                <rect key="frame" x="16" y="7" width="34" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="backBtn:" destination="QwQ-RN-fgw" eventType="touchUpInside" id="siD-fB-RB9"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="5bK-lO-B9l">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="F0y-LI-vcd">
+                                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Main Menu"/>
+                                                <connections>
+                                                    <action selector="mainMenuClicked:" destination="QwQ-RN-fgw" eventType="touchUpInside" id="ZrO-qz-I6b"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eeo-He-RTp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Family Members" id="OGI-ck-YkX">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Uvx-yi-riC">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cL9-BL-ctR">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Main Menu"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="numberLbl" destination="vAM-Af-BhE" id="Rwf-Vn-sB2"/>
+                        <outlet property="stepperValue" destination="Xf8-Pn-Yqe" id="VJA-0b-zhE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29v-NL-Ves" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2978.4000000000001" y="1579.1604197901052"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="wYH-Zt-IN8">
@@ -380,7 +465,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kec-gR-sWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888.8" y="-233.43328335832086"/>
+            <point key="canvasLocation" x="2162" y="90"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="n8e-8o-j9d">
@@ -442,7 +527,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZv-SD-51D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="-542"/>
+            <point key="canvasLocation" x="1201" y="-648"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h2N-nb-tQM">

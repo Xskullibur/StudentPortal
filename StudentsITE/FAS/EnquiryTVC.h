@@ -10,4 +10,8 @@
 
 @interface EnquiryTVC : UITableViewController
 
+- (IBAction)ContinueBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *singaporeanSW;
+@property (weak, nonatomic) IBOutlet UISwitch *scholarshipSW;
+
 @end

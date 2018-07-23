@@ -95,4 +95,20 @@
 }
 */
 
+- (IBAction)ContinueBtn:(id)sender {
+    
+    if (_singaporeanSW.isOn && _scholarshipSW.isOn) {
+        
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"FAS" bundle:nil];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"NoOfFamilyVC"];
+        vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:vc animated:YES completion:nil];
+        
+    }else{
+        
+        
+        
+    }
+    
+}
 @end
