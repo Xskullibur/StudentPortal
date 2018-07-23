@@ -10,10 +10,11 @@
 
 @interface NoOfFamilyVC : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *numberTxt;
 @property (weak, nonatomic) IBOutlet UILabel *numberLbl;
 @property (weak, nonatomic) IBOutlet UIStepper *stepperValue;
 - (IBAction)stepperClicked:(id)sender;
-- (IBAction)mainMenuClicked:(id)sender;
-- (IBAction)backBtn:(id)sender;
+- (IBAction)MenuBtn:(id)sender;
+- (IBAction)numberTxt:(id)sender;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "NoOfFamilyVC.h"
+#import "FamilyInfoTVC.h"
 
 @interface NoOfFamilyVC ()
 
@@ -24,23 +25,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    FamilyInfoTVC *vc = [segue destinationViewController];
+    vc.NoOfFamily = _stepperValue.value;
+    
 }
-*/
+
 
 - (IBAction)stepperClicked:(id)sender {
     
-    _numberLbl.text = [@"Number of Family Members: " stringByAppendingString:[NSString stringWithFormat:@"%d", (int)_stepperValue.value] ];
+    _numberTxt.text = [NSString stringWithFormat:@"%d", (int)_stepperValue.value];
     
 }
 
-- (IBAction)mainMenuClicked:(id)sender {
+- (IBAction)MenuBtn:(id)sender {
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MainMenu"];
@@ -49,12 +54,16 @@
     
 }
 
-- (IBAction)backBtn:(id)sender {
+- (IBAction)numberTxt:(id)sender {
     
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"FAS" bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"EnquiryTVC"];
-    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:vc animated:YES completion:nil];
+    _stepperValue.value = [_numberTxt.text floatValue];
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [_numberTxt resignFirstResponder];
+    [[self.view window] endEditing:YES];
     
 }
 

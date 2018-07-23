@@ -1,18 +1,18 @@
 //
-//  EnquiryTVC.m
+//  FamilyInfoTVC.m
 //  StudentsITE
 //
-//  Created by Alson on 21/7/18.
+//  Created by Alson on 23/7/18.
 //  Copyright © 2018 Student2. All rights reserved.
 //
 
-#import "EnquiryTVC.h"
+#import "FamilyInfoTVC.h"
 
-@interface EnquiryTVC ()
+@interface FamilyInfoTVC ()
 
 @end
 
-@implementation EnquiryTVC
+@implementation FamilyInfoTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,7 +33,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
-    return 1;
+    return _NoOfFamily;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -94,20 +94,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)ContinueBtn:(id)sender {
-    
-    if (!_singaporeanSW.isOn && !_scholarshipSW.isOn) {
-        
-        //Failed Alert
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Not Eligible For Application" message:@"Sorry You Are Not Eligible For Our Financial Assistance Scheme..." preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
-        
-        [alert addAction: okButton];
-        [self presentViewController:alert animated:YES completion:nil];
-    }
-    
-}
 
 @end
