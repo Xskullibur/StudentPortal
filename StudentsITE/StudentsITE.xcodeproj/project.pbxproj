@@ -28,6 +28,8 @@
 		FE0E58CD2104504A00BB1268 /* EnquiryTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E58CC2104504A00BB1268 /* EnquiryTVC.m */; };
 		FECACC1B21060BEB00A2DBD6 /* FamilyInfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECACC1A21060BEB00A2DBD6 /* FamilyInfoTVC.m */; };
 		FECACC1E2106221600A2DBD6 /* FamilyMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FECACC1D2106221600A2DBD6 /* FamilyMemberCell.m */; };
+		FECACC3021063DDD00A2DBD6 /* AvailableFasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FECACC2F21063DDD00A2DBD6 /* AvailableFasVC.m */; };
+		FECACC332106404300A2DBD6 /* fasTV.m in Sources */ = {isa = PBXBuildFile; fileRef = FECACC322106404300A2DBD6 /* fasTV.m */; };
 		FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */; };
 		FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */; };
 		FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */; };
@@ -92,6 +94,10 @@
 		FECACC1A21060BEB00A2DBD6 /* FamilyInfoTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyInfoTVC.m; sourceTree = "<group>"; };
 		FECACC1C2106221600A2DBD6 /* FamilyMemberCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FamilyMemberCell.h; sourceTree = "<group>"; };
 		FECACC1D2106221600A2DBD6 /* FamilyMemberCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyMemberCell.m; sourceTree = "<group>"; };
+		FECACC2E21063DDD00A2DBD6 /* AvailableFasVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvailableFasVC.h; sourceTree = "<group>"; };
+		FECACC2F21063DDD00A2DBD6 /* AvailableFasVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvailableFasVC.m; sourceTree = "<group>"; };
+		FECACC312106404300A2DBD6 /* fasTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fasTV.h; sourceTree = "<group>"; };
+		FECACC322106404300A2DBD6 /* fasTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fasTV.m; sourceTree = "<group>"; };
 		FEF0AE1F20FE1F59004F72C8 /* MainMenuCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuCVC.h; sourceTree = "<group>"; };
 		FEF0AE2020FE1F59004F72C8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
@@ -226,6 +232,10 @@
 				FECACC1A21060BEB00A2DBD6 /* FamilyInfoTVC.m */,
 				FECACC1C2106221600A2DBD6 /* FamilyMemberCell.h */,
 				FECACC1D2106221600A2DBD6 /* FamilyMemberCell.m */,
+				FECACC2E21063DDD00A2DBD6 /* AvailableFasVC.h */,
+				FECACC2F21063DDD00A2DBD6 /* AvailableFasVC.m */,
+				FECACC312106404300A2DBD6 /* fasTV.h */,
+				FECACC322106404300A2DBD6 /* fasTV.m */,
 			);
 			path = FAS;
 			sourceTree = "<group>";
@@ -393,6 +403,7 @@
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
 				DF2781CB20FEF01F009BA41A /* IADTVC.m in Sources */,
 				FECACC1B21060BEB00A2DBD6 /* FamilyInfoTVC.m in Sources */,
+				FECACC3021063DDD00A2DBD6 /* AvailableFasVC.m in Sources */,
 				FECACC1E2106221600A2DBD6 /* FamilyMemberCell.m in Sources */,
 				DF2781CA20FEF01F009BA41A /* MAETVC.m in Sources */,
 				DF2781CC20FEF01F009BA41A /* LifeskillsTVC.m in Sources */,
@@ -400,6 +411,7 @@
 				DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */,
 				FEF0AE2A20FE2623004F72C8 /* Alert.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
+				FECACC332106404300A2DBD6 /* fasTV.m in Sources */,
 				DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */,
 				FE0E58CD2104504A00BB1268 /* EnquiryTVC.m in Sources */,
 				DF2781CD20FEF01F009BA41A /* SWTVC.m in Sources */,
