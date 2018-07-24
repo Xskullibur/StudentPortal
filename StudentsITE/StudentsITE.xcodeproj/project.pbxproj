@@ -33,7 +33,6 @@
 		FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */; };
 		FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */; };
 		FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */; };
-		FEF0AE2A20FE2623004F72C8 /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2920FE2623004F72C8 /* Alert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +102,6 @@
 		FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
 		FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuCVC.m; sourceTree = "<group>"; };
 		FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
-		FEF0AE2820FE2623004F72C8 /* Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
-		FEF0AE2920FE2623004F72C8 /* Alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,12 +147,23 @@
 			path = "Lect Info";
 			sourceTree = "<group>";
 		};
+		DF2781D820FF1C98009BA41A /* GPA Calc */ = {
+			isa = PBXGroup;
+			children = (
+				DF2781D920FF1CBA009BA41A /* GPACalc.storyboard */,
+				DF3F408E210572F5007B8564 /* GPAResultTVC.h */,
+				DF3F408F210572F5007B8564 /* GPAResultTVC.m */,
+				DF6A651E210565BA00F9FC02 /* GPACalcTVC.h */,
+				DF6A651F210565BA00F9FC02 /* GPACalcTVC.m */,
+			);
+			path = "GPA Calc";
+			sourceTree = "<group>";
+		};
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
 				DFDA2B9B20FEFCA1006BFBC1 /* FAS */,
 				DF2781BE20FEEFE1009BA41A /* Lect Info */,
-				FEF0AE2720FE25F6004F72C8 /* Functions */,
 				FEF0AE1C20FE1F1E004F72C8 /* Main Menu */,
 				DFB25CDB20F5B45600F493F3 /* Login */,
 				DFB25CA820F5B33900F493F3 /* StudentsITE */,
@@ -250,15 +258,6 @@
 				FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */,
 			);
 			path = "Main Menu";
-			sourceTree = "<group>";
-		};
-		FEF0AE2720FE25F6004F72C8 /* Functions */ = {
-			isa = PBXGroup;
-			children = (
-				FEF0AE2820FE2623004F72C8 /* Alert.h */,
-				FEF0AE2920FE2623004F72C8 /* Alert.m */,
-			);
-			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +371,7 @@
 				DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */,
 				DFDA2B9D20FEFCC4006BFBC1 /* FAS.storyboard in Resources */,
 				DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */,
+				DF2781DA20FF1CBA009BA41A /* GPACalc.storyboard in Resources */,
 				DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,10 +406,10 @@
 				FECACC3021063DDD00A2DBD6 /* AvailableFasVC.m in Sources */,
 				FECACC1E2106221600A2DBD6 /* FamilyMemberCell.m in Sources */,
 				DF2781CA20FEF01F009BA41A /* MAETVC.m in Sources */,
+				DF3F4090210572F5007B8564 /* GPAResultTVC.m in Sources */,
 				DF2781CC20FEF01F009BA41A /* LifeskillsTVC.m in Sources */,
 				DF7A672321056CFA00E46C6D /* NoOfFamilyVC.m in Sources */,
 				DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */,
-				FEF0AE2A20FE2623004F72C8 /* Alert.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
 				DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */,
 				FE0E58CD2104504A00BB1268 /* EnquiryTVC.m in Sources */,
@@ -571,11 +571,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StudentsITE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.ite.StudentsITE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -584,11 +586,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StudentsITE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.ite.StudentsITE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
