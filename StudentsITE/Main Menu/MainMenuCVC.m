@@ -23,11 +23,11 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"Value Passed");
+   
     NSLog(@"%ld", (long)_userIndex);
     
-    ButtonLabels = @[@"Campus Map", @"Exam Countdown", @"GPA Calculator", @"Lecturer Info", @"myConneXion", @"Student Info", @"Schedule"];
-    Buttons = @[@"campusMap", @"examCountdown", @"gpaCalculator", @"lecturer", @"myConneXion", @"studentInfo", @"timetable"];
+    ButtonLabels = @[@"Campus Map", @"Exam Countdown", @"GPA Calculator", @"Lecturer Info", @"myConneXion", @"Student Info", @"Schedule", @"FAS"];
+    Buttons = @[@"campusMap", @"examCountdown", @"gpaCalculator", @"lecturer", @"myConneXion", @"studentInfo", @"timetable", @"fAS"];
     
     // Uncommen t the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -92,22 +92,39 @@ static NSString * const reuseIdentifier = @"Cell";
             
         case 1:
             //Exam CountDown
+           
             break;
             
         case 2:
             //GPA Calculator
+        {
+            
+            UIStoryboard *GPAStoryboard = [UIStoryboard storyboardWithName:@"GPACalc" bundle:nil];
+            
+            UIViewController *GPACalcTVC = [GPAStoryboard instantiateViewControllerWithIdentifier:@"GPA"];
+            
+            [[UIApplication sharedApplication].keyWindow setRootViewController:GPACalcTVC];
+        }
             break;
             
         case 3:
-            //Exam CountDown
+            //Lect Info
+        {
+            UIStoryboard *LectStoryboard = [UIStoryboard storyboardWithName:@"Lect" bundle:nil];
+            
+            UIViewController *LectTVC = [LectStoryboard instantiateViewControllerWithIdentifier:@"Lect"];
+            
+            [[UIApplication sharedApplication].keyWindow setRootViewController:LectTVC];
+            
+        }
             break;
             
         case 4:
-            //Lecturer Info
+           //myConneXion
             break;
             
         case 5:
-            //myConneXion
+            //Student Info
             break;
             
         case 6:

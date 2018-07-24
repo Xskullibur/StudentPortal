@@ -425,6 +425,11 @@
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="GPA Calculator" id="Vke-c6-yQa">
+                        <barButtonItem key="leftBarButtonItem" title="Main" id="46c-bN-0HQ">
+                            <connections>
+                                <action selector="btnMain:" destination="Cam-wT-qVu" id="e9M-Bb-VOd"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Calculate" id="fAH-BB-vHg">
                             <connections>
                                 <action selector="btnCalc:" destination="Cam-wT-qVu" id="Ifx-pW-3Gz"/>
@@ -608,7 +613,7 @@
         <!--Navigation Controller-->
         <scene sceneID="6a5-Qy-5un">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X5N-ig-P9J" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GPA" automaticallyAdjustsScrollViewInsets="NO" id="X5N-ig-P9J" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uhe-dW-CJw">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

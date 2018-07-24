@@ -12,7 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *gdCMOS;
 @property (strong, nonatomic) IBOutlet UITextField *gdNT;
-@property (strong, nonatomic) IBOutlet UITextField *gdBM1;
 @property (strong, nonatomic) IBOutlet UITextField *gdSW1;
 @property (strong, nonatomic) IBOutlet UITextField *gdPPD1;
 @property (strong, nonatomic) IBOutlet UITextField *gdADE;
@@ -27,6 +26,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *gdMSD;
 @property (strong, nonatomic) IBOutlet UITextField *gdSW4;
 - (IBAction)btnCalc:(id)sender;
+- (IBAction)btnMain:(id)sender;
 @end
 
 

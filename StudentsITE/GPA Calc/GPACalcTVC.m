@@ -153,5 +153,13 @@
     
 }
 
+- (IBAction)btnMain:(id)sender {
+    UIStoryboard *MainStoryboard = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
+    
+    UIViewController *MainMenuCVC = [MainStoryboard instantiateViewControllerWithIdentifier:@"MainMenu"];
+    
+    [[UIApplication sharedApplication].keyWindow setRootViewController:MainMenuCVC];
+}
+
 
 @end

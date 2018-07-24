@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -215,7 +214,7 @@
         <!--Navigation Controller-->
         <scene sceneID="qrb-MK-dh0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="slx-EP-tSo" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Lect" automaticallyAdjustsScrollViewInsets="NO" id="slx-EP-tSo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7m5-z3-Bu2">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
