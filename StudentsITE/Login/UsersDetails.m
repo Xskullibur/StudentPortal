@@ -16,12 +16,14 @@
     
     NSMutableArray* User1 = [NSMutableArray arrayWithObjects:@"T0029863D", @"123", @"Alson", @"TRUE", nil];
     NSMutableArray* User2 = [NSMutableArray arrayWithObjects:@"T1234567A", @"pass", @"John", @"FALSE", nil];
+    NSMutableArray* User3 = [NSMutableArray arrayWithObjects:@"T0038205H", @"1234", @"Keegan", @"TRUE", nil];
     
     self = [super init];
     if (self) {
         
         [_UserInfo addObject:User1];
         [_UserInfo addObject:User2];
+        [_UserInfo addObject:User3];
         
     }
     return self;
