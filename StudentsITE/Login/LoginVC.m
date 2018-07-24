@@ -50,7 +50,7 @@
         UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
         MainMenuCVC *mainVC = [mainScreen instantiateViewControllerWithIdentifier:@"MainMenu"];
         mainVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-        mainVC.userIndex = 1;
+        //mainVC.userIndex = 1;
         
         [self presentViewController:mainVC animated:YES completion:nil];
     }

@@ -1,18 +1,18 @@
 //
-//  LectTVC.m
+//  fasMainTVC.m
 //  StudentsITE
 //
-//  Created by Student2 on 17/7/18.
+//  Created by Alson on 24/7/18.
 //  Copyright © 2018 Student2. All rights reserved.
 //
 
-#import "LectTVC.h"
+#import "fasMainTVC.h"
 
-@interface LectTVC ()
+@interface fasMainTVC ()
 
 @end
 
-@implementation LectTVC
+@implementation fasMainTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +29,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//#warning Incomplete implementation, return the number of sections
+    return 3;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//#warning Incomplete implementation, return the number of rows
+    return 2;
+}
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -63,7 +63,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of items
-    return Buttons.count;;
+    return Buttons.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -98,7 +98,6 @@ static NSString * const reuseIdentifier = @"Cell";
         case 2:
             //GPA Calculator
         {
-            
             UIStoryboard *GPAStoryboard = [UIStoryboard storyboardWithName:@"GPACalc" bundle:nil];
             
             UIViewController *GPACalcTVC = [GPAStoryboard instantiateViewControllerWithIdentifier:@"GPA"];
@@ -129,6 +128,17 @@ static NSString * const reuseIdentifier = @"Cell";
             
         case 6:
             //Schedule
+            break;
+            
+        case 7:
+            //FAS
+        {
+            UIStoryboard *FasStoryboard = [UIStoryboard storyboardWithName:@"FAS" bundle:nil];
+            
+            UIViewController *FasTVC = [FasStoryboard instantiateViewControllerWithIdentifier:@"FAS"];
+            
+            [[UIApplication sharedApplication].keyWindow setRootViewController:FasTVC];
+        }
             break;
             
         default:
