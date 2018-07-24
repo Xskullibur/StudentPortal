@@ -15,9 +15,6 @@
 @implementation ExamVC
 
 -(void) displayTime: (NSTimer *)timer{
-    
-    //_currentDate = [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[NSDate date]];
-    
     NSDateComponents * compare = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[NSDate date] toDate:_examDate options:0];
     
     _daysLbl.text = [NSString stringWithFormat:@"%ld", [compare day]];
@@ -43,8 +40,6 @@
     //Display Info
     _examLbl.text = @"MAE Theory Exam";
     _dateLbl.text = [_examDate description];
-    
-    //_examDate = [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:date];
     
     //Display Coutdown
     [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(displayTime:) userInfo:nil repeats:YES];
