@@ -9,6 +9,7 @@
 #import "LoginVC.h"
 #import "MainMenuCVC.h"
 #import "UsersDetails.h"
+#import "StudInfoTVC.h"
 
 
 @interface LoginVC ()
@@ -20,7 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    StudInfoTVC *StudInfoStoryboard = [[StudInfoTVC alloc] initWithNib:@"ViewControllerB" bundle:nil];
+//    StudInfoTVC
+//    [self pushViewController:viewControllerB animated:YES];
     
+   
     _userDetails = [[UsersDetails alloc] init];
 }
 

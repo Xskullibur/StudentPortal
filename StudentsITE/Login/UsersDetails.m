@@ -14,9 +14,9 @@
 {
     _UserInfo = [[NSMutableArray alloc] init];
     
-    NSMutableArray* User1 = [NSMutableArray arrayWithObjects:@"T0029863D", @"123", @"Alson", @"TRUE", nil];
-    NSMutableArray* User2 = [NSMutableArray arrayWithObjects:@"T1234567A", @"pass", @"John", @"FALSE", nil];
-    NSMutableArray* User3 = [NSMutableArray arrayWithObjects:@"T0038205H", @"1234", @"Keegan", @"TRUE", nil];
+    NSMutableArray* User1 = [NSMutableArray arrayWithObjects:@"T0029863D", @"123", @"Alson", @"Whampoa Drive 50",@"#05-2264",@"523432",nil];
+    NSMutableArray* User2 = [NSMutableArray arrayWithObjects:@"T1234567A", @"pass", @"John", @"Bishan Street 31",@"#21-3212" , @"554111",nil];
+    NSMutableArray* User3 = [NSMutableArray arrayWithObjects:@"T0038205H", @"1234", @"Keegan", @"Ang Mo Kio Avenue 1",@"#07-2379",@"540355",nil];
     
     self = [super init];
     if (self) {

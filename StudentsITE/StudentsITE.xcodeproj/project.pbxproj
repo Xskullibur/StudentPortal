@@ -25,6 +25,8 @@
 		DFB25CCE20F5B33900F493F3 /* StudentsITEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CCD20F5B33900F493F3 /* StudentsITEUITests.m */; };
 		DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CDC20F5B5BB00F493F3 /* Login.storyboard */; };
 		DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */; };
+		DFB9696B2106C7BD00FAC426 /* StudentInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB9696A2106C7BD00FAC426 /* StudentInfo.storyboard */; };
+		DFD5EB492106C91D00E878DD /* StudInfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD5EB482106C91D00E878DD /* StudInfoTVC.m */; };
 		FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */; };
 		FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2220FE1F5A004F72C8 /* MainMenuCVC.m */; };
 		FEF0AE2620FE1F5A004F72C8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AE2320FE1F5A004F72C8 /* CollectionViewCell.m */; };
@@ -82,6 +84,9 @@
 		DFB25CDC20F5B5BB00F493F3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DFB25CDE20F5B5DA00F493F3 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		DFB9696A2106C7BD00FAC426 /* StudentInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentInfo.storyboard; sourceTree = "<group>"; };
+		DFD5EB472106C91D00E878DD /* StudInfoTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudInfoTVC.h; sourceTree = "<group>"; };
+		DFD5EB482106C91D00E878DD /* StudInfoTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudInfoTVC.m; sourceTree = "<group>"; };
 		FEF0AE1F20FE1F59004F72C8 /* MainMenuCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuCVC.h; sourceTree = "<group>"; };
 		FEF0AE2020FE1F59004F72C8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		FEF0AE2120FE1F5A004F72C8 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
@@ -147,6 +152,7 @@
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
+				DFB969692106C79C00FAC426 /* Student Info */,
 				DF2781D820FF1C98009BA41A /* GPA Calc */,
 				DF2781BE20FEEFE1009BA41A /* Lect Info */,
 				FEF0AE1C20FE1F1E004F72C8 /* Main Menu */,
@@ -209,6 +215,16 @@
 				DFB25CDF20F5B5DA00F493F3 /* LoginVC.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		DFB969692106C79C00FAC426 /* Student Info */ = {
+			isa = PBXGroup;
+			children = (
+				DFB9696A2106C7BD00FAC426 /* StudentInfo.storyboard */,
+				DFD5EB472106C91D00E878DD /* StudInfoTVC.h */,
+				DFD5EB482106C91D00E878DD /* StudInfoTVC.m */,
+			);
+			path = "Student Info";
 			sourceTree = "<group>";
 		};
 		FEF0AE1C20FE1F1E004F72C8 /* Main Menu */ = {
@@ -330,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */,
+				DFB9696B2106C7BD00FAC426 /* StudentInfo.storyboard in Resources */,
 				DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */,
 				DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */,
 				DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */,
@@ -372,6 +389,7 @@
 				DF6A6520210565BA00F9FC02 /* GPACalcTVC.m in Sources */,
 				DF2781CD20FEF01F009BA41A /* SWTVC.m in Sources */,
 				FEF0AE2520FE1F5A004F72C8 /* MainMenuCVC.m in Sources */,
+				DFD5EB492106C91D00E878DD /* StudInfoTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
