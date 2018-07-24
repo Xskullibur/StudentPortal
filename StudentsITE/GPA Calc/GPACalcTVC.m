@@ -115,49 +115,36 @@
      //Get the new view controller using [segue destinationViewController].
      //Pass the selected object to the new view controller.
     
-    GPAResultTVC *vc = [[GPAResultTVC alloc] init];
-    NSInteger CMOS=[self GradeToScale:_gdCMOS.text];
-    NSInteger NT=[self GradeToScale:_gdNT.text];
-    NSInteger BM1=[self GradeToScale:_gdBM1.text];
-    NSInteger SW1=[self GradeToScale:_gdSW1.text];
-    NSInteger PPD1=[self GradeToScale:_gdPPD1.text];
+    GPAResultTVC *vc = [segue destinationViewController];
+    vc.CMOS=[self GradeToScale:[_gdCMOS.text uppercaseString]];
+    vc.NT=[self GradeToScale:[_gdNT.text uppercaseString]];
+    vc.SW1=[self GradeToScale:[_gdSW1.text uppercaseString]];
+    vc.PPD1=[self GradeToScale:[_gdPPD1.text uppercaseString]];
     
-    NSInteger ADE=[self GradeToScale:_gdADE.text];
-    NSInteger SYSAD=[self GradeToScale:_gdADE.text];
-    NSInteger SW2=[self GradeToScale:_gdADE.text];
-    NSInteger PPD2=[self GradeToScale:_gdADE.text];
+    vc.ADE=[self GradeToScale:[_gdADE.text uppercaseString]];
+    vc.SYSAD=[self GradeToScale:[_gdADE.text uppercaseString]];
+    vc.SW2=[self GradeToScale:[_gdADE.text uppercaseString]];
+    vc.PPD2=[self GradeToScale:[_gdADE.text uppercaseString]];
     
-    NSInteger MAE = [self GradeToScale:_gdMAE.text];
-    NSInteger IAD = [self GradeToScale:_gdIAD.text];
-    NSInteger SW3 = [self GradeToScale:_gdSW3.text];
-    NSInteger PM = [self GradeToScale:_gdPM.text];
+    vc.MAE = [self GradeToScale:[_gdMAE.text uppercaseString]];
+    vc.IAD = [self GradeToScale:[_gdIAD.text uppercaseString]];
+    vc.SW3 = [self GradeToScale:[_gdSW3.text uppercaseString]];
+    vc.PM = [self GradeToScale:[_gdPM.text uppercaseString]];
     
-    NSInteger IA = [self GradeToScale:_gdIA.text];
-    NSInteger MSD = [self GradeToScale:_gdMSD.text];
-    NSInteger SW4 = [self GradeToScale:_gdSW4.text];
+    vc.IA = [self GradeToScale:[_gdIA.text uppercaseString]];
+    vc.MSD = [self GradeToScale:[_gdMSD.text uppercaseString]];
+    vc.SW4 = [self GradeToScale:[_gdSW4.text uppercaseString]];
     
-    NSInteger MainCU = 7;
-    NSInteger ElectCU = 3;
-    NSInteger LSCU = 2;
-    NSInteger SWCU = 1;
-    NSInteger IACU = 4;
+    vc.MainCU = 7;
+    vc.ElectCU = 3;
+    vc.LSCU = 2;
+    vc.SWCU = 1;
+    vc.IACU = 4;
+
     
     
     
-    CGFloat Y1S1GPA = (CMOS * MainCU + NT * MainCU + BM1 * ElectCU + SW1 * SWCU + PPD1 * LSCU)/(MainCU * 2 +ElectCU + LSCU + SWCU);
-    vc.lbY1S1GPA.text=[NSString stringWithFormat:@"%f",Y1S1GPA];
-    
-    CGFloat Y1S2GPA = (ADE * MainCU + SYSAD * MainCU + SW2 * SWCU + PPD2 * LSCU)/(MainCU *2 + LSCU +SWCU);
-    vc.lbY1S2GPA.text=[NSString stringWithFormat:@"%f",Y1S2GPA];
-    
-    CGFloat Y2S1GPA = (MAE *MainCU + IAD * MainCU + SW3 * SWCU + PM * LSCU)/(MainCU * 2 + SWCU + MainCU);
-    vc.lbY2S1GPA.text = [NSString stringWithFormat:@"%f",Y2S1GPA];
-    
-    CGFloat Y2S2GPA = (IA * IACU + MSD * MainCU + SW4 * SWCU)/(MainCU + IACU + SWCU);
-    vc.lbY2S2GPA.text=[NSString stringWithFormat:@"%f",Y2S2GPA];
-    
-    CGFloat CLGPA = (Y1S1GPA + Y1S2GPA + Y2S1GPA + Y2S2GPA)/4;
-    vc.lbCLGPA.text = [NSString stringWithFormat:@"%f",CLGPA];
+   
 }
 
 

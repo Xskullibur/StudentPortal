@@ -15,5 +15,30 @@
 @property (strong, nonatomic) IBOutlet UILabel *lbY2S1GPA;
 @property (strong, nonatomic) IBOutlet UILabel *lbY2S2GPA;
 @property (strong, nonatomic) IBOutlet UILabel *lbCLGPA;
+@property NSInteger CMOS;
+@property NSInteger NT;
+@property NSInteger BM1;
+@property NSInteger SW1;
+@property NSInteger PPD1;
+
+@property NSInteger ADE;
+@property NSInteger SYSAD;
+@property NSInteger SW2;
+@property NSInteger PPD2;
+
+@property NSInteger MAE;
+@property NSInteger IAD;
+@property NSInteger SW3;
+@property NSInteger PM;
+
+@property NSInteger IA;
+@property NSInteger MSD;
+@property NSInteger SW4;
+
+@property NSInteger MainCU;
+@property NSInteger ElectCU;
+@property NSInteger LSCU;
+@property NSInteger SWCU;
+@property NSInteger IACU;
 
 @end

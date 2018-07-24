@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @interface GPACalcTVC : UITableViewController
--(NSUInteger)GradeToScale:(NSString *)Grade;
+-(NSInteger)GradeToScale:(NSString *)Grade;
 
 @property (strong, nonatomic) IBOutlet UITextField *gdCMOS;
 @property (strong, nonatomic) IBOutlet UITextField *gdNT;
