@@ -11,7 +11,7 @@
         <!--Campus Map-->
         <scene sceneID="ILg-vh-L8g">
             <objects>
-                <tableViewController id="yh2-JY-Wsa" sceneMemberID="viewController">
+                <tableViewController id="yh2-JY-Wsa" customClass="MapTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Hf8-dH-sAd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,7 +170,13 @@
                             <outlet property="delegate" destination="yh2-JY-Wsa" id="dRV-n0-MGQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Campus Map" id="qCB-aH-Gv5"/>
+                    <navigationItem key="navigationItem" title="Campus Map" id="qCB-aH-Gv5">
+                        <barButtonItem key="leftBarButtonItem" title="Main" id="oxk-1F-sdl">
+                            <connections>
+                                <action selector="btnMain:" destination="yh2-JY-Wsa" id="cyg-w5-tdc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZz-oU-IXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
