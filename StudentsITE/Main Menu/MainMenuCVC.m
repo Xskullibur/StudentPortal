@@ -27,8 +27,8 @@ static NSString * const reuseIdentifier = @"Cell";
    
     NSLog(@"Main Menu User Index: %ld", (long)_userIndex);
     
-    ButtonLabels = @[@"Campus Map", @"Exam Countdown", @"GPA Calculator", @"Lecturer Info", @"myConneXion", @"Student Info", @"Schedule", @"FAS"];
-    Buttons = @[@"campusMap", @"examCountdown", @"gpaCalculator", @"lecturer", @"myConneXion", @"studentInfo", @"timetable", @"fAS"];
+    ButtonLabels = @[@"Campus Map", @"Exam Countdown", @"GPA Calculator", @"Lecturer Info", @"myConneXion", @"Student Info", @"FAS"];
+    Buttons = @[@"campusMap", @"examCountdown", @"gpaCalculator", @"lecturer", @"myConneXion", @"studentInfo", @"fAS"];
     
     // Uncommen t the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -92,10 +92,24 @@ static NSString * const reuseIdentifier = @"Cell";
     switch (indexPath.row) {
         case 0:
             //Campus Map
+        {
+            UIStoryboard *MapStoryboard = [UIStoryboard storyboardWithName:@"CampusMap" bundle:nil];
+            
+            UIViewController *MapVC = [MapStoryboard instantiateViewControllerWithIdentifier:@"CampusMap"];
+            
+            [[UIApplication sharedApplication].keyWindow setRootViewController:MapVC];
+        }
             break;
             
         case 1:
             //Exam CountDown
+        {
+            UIStoryboard *CountStoryboard = [UIStoryboard storyboardWithName:@"ExamCountdown" bundle:nil];
+            
+            UIViewController *ExamVC = [CountStoryboard instantiateViewControllerWithIdentifier:@"ExamCountdown"];
+            
+            [[UIApplication sharedApplication].keyWindow setRootViewController:ExamVC];
+        }
            
             break;
             
@@ -123,7 +137,14 @@ static NSString * const reuseIdentifier = @"Cell";
             break;
             
         case 4:
-           //myConneXion
+            //myConneXion
+        {
+            UIStoryboard *WebStoryboard = [UIStoryboard storyboardWithName:@"MyConnection" bundle:nil];
+            
+            UIViewController *ConnectVC = [WebStoryboard instantiateViewControllerWithIdentifier:@"Connect"];
+            
+            [[UIApplication sharedApplication].keyWindow setRootViewController:ConnectVC];
+        }
             break;
             
         case 5:
@@ -136,10 +157,6 @@ static NSString * const reuseIdentifier = @"Cell";
             break;
             
         case 6:
-            //Schedule
-            break;
-            
-        case 7:
             //FAS
         {
             UIStoryboard *FasStoryboard = [UIStoryboard storyboardWithName:@"FAS" bundle:nil];
