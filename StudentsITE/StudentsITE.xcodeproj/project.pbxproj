@@ -14,6 +14,8 @@
 		DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2781C720FEF01F009BA41A /* LectTVC.m */; };
 		DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2781C820FEF01F009BA41A /* Lect.storyboard */; };
 		DF57216720FF1D8C00EF8B82 /* FamilyMember.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57216520FF1D8C00EF8B82 /* FamilyMember.m */; };
+		DF5B596021084F1100DAA975 /* StudInfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B595D21084F1100DAA975 /* StudInfoTVC.m */; };
+		DF5B596121084F1100DAA975 /* StudentInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5B595E21084F1100DAA975 /* StudentInfo.storyboard */; };
 		DF75D23A2106BA0E00857072 /* fasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75D2392106BA0E00857072 /* fasCell.m */; };
 		DF7A672321056CFA00E46C6D /* NoOfFamilyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7A672221056CFA00E46C6D /* NoOfFamilyVC.m */; };
 		DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */; };
@@ -70,6 +72,9 @@
 		DF2781C920FEF01F009BA41A /* SWTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTVC.h; sourceTree = "<group>"; };
 		DF57216520FF1D8C00EF8B82 /* FamilyMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyMember.m; sourceTree = "<group>"; };
 		DF57216620FF1D8C00EF8B82 /* FamilyMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyMember.h; sourceTree = "<group>"; };
+		DF5B595D21084F1100DAA975 /* StudInfoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudInfoTVC.m; sourceTree = "<group>"; };
+		DF5B595E21084F1100DAA975 /* StudentInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentInfo.storyboard; sourceTree = "<group>"; };
+		DF5B595F21084F1100DAA975 /* StudInfoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudInfoTVC.h; sourceTree = "<group>"; };
 		DF75D2382106BA0E00857072 /* fasCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fasCell.h; sourceTree = "<group>"; };
 		DF75D2392106BA0E00857072 /* fasCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fasCell.m; sourceTree = "<group>"; };
 		DF7A672121056CFA00E46C6D /* NoOfFamilyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoOfFamilyVC.h; sourceTree = "<group>"; };
@@ -157,6 +162,16 @@
 			path = "Lect Info";
 			sourceTree = "<group>";
 		};
+		DF5B595C21084EE600DAA975 /* Student Info */ = {
+			isa = PBXGroup;
+			children = (
+				DF5B595E21084F1100DAA975 /* StudentInfo.storyboard */,
+				DF5B595F21084F1100DAA975 /* StudInfoTVC.h */,
+				DF5B595D21084F1100DAA975 /* StudInfoTVC.m */,
+			);
+			path = "Student Info";
+			sourceTree = "<group>";
+		};
 		DF7C39BE2108255200D4B5D1 /* Campus Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +183,7 @@
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
+				DF5B595C21084EE600DAA975 /* Student Info */,
 				DF7C39BE2108255200D4B5D1 /* Campus Map */,
 				FE79224321076B2B0090DF26 /* Exam Countdown */,
 				DFDA2B9B20FEFCA1006BFBC1 /* FAS */,
@@ -387,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */,
+				DF5B596121084F1100DAA975 /* StudentInfo.storyboard in Resources */,
 				DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */,
 				DF7C39C02108257800D4B5D1 /* CampusMap.storyboard in Resources */,
 				DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */,
@@ -424,6 +441,7 @@
 				FE792248210774260090DF26 /* ExamVC.m in Sources */,
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
 				DF2781CB20FEF01F009BA41A /* IADTVC.m in Sources */,
+				DF5B596021084F1100DAA975 /* StudInfoTVC.m in Sources */,
 				FECACC1B21060BEB00A2DBD6 /* FamilyInfoTVC.m in Sources */,
 				FECACC3021063DDD00A2DBD6 /* AvailableFasVC.m in Sources */,
 				FE792242210765050090DF26 /* fasMainTVC.m in Sources */,
