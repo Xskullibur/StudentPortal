@@ -17,6 +17,7 @@
 		DF75D23A2106BA0E00857072 /* fasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75D2392106BA0E00857072 /* fasCell.m */; };
 		DF7A672321056CFA00E46C6D /* NoOfFamilyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7A672221056CFA00E46C6D /* NoOfFamilyVC.m */; };
 		DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */; };
+		DF7C39C02108257800D4B5D1 /* CampusMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C39BF2108257800D4B5D1 /* CampusMap.storyboard */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
 		DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB220F5B33900F493F3 /* Assets.xcassets */; };
 		DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB420F5B33900F493F3 /* LaunchScreen.storyboard */; };
@@ -75,6 +76,7 @@
 		DF7A672221056CFA00E46C6D /* NoOfFamilyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoOfFamilyVC.m; sourceTree = "<group>"; };
 		DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersDetails.h; sourceTree = "<group>"; };
 		DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersDetails.m; sourceTree = "<group>"; };
+		DF7C39BF2108257800D4B5D1 /* CampusMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CampusMap.storyboard; sourceTree = "<group>"; };
 		DFB25CA620F5B33900F493F3 /* StudentsITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsITE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB25CA920F5B33900F493F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFB25CAA20F5B33900F493F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,9 +157,18 @@
 			path = "Lect Info";
 			sourceTree = "<group>";
 		};
+		DF7C39BE2108255200D4B5D1 /* Campus Map */ = {
+			isa = PBXGroup;
+			children = (
+				DF7C39BF2108257800D4B5D1 /* CampusMap.storyboard */,
+			);
+			path = "Campus Map";
+			sourceTree = "<group>";
+		};
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
+				DF7C39BE2108255200D4B5D1 /* Campus Map */,
 				FE79224321076B2B0090DF26 /* Exam Countdown */,
 				DFDA2B9B20FEFCA1006BFBC1 /* FAS */,
 				DF2781BE20FEEFE1009BA41A /* Lect Info */,
@@ -377,6 +388,7 @@
 			files = (
 				FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */,
 				DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */,
+				DF7C39C02108257800D4B5D1 /* CampusMap.storyboard in Resources */,
 				DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */,
 				DFDA2B9D20FEFCC4006BFBC1 /* FAS.storyboard in Resources */,
 				DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */,
