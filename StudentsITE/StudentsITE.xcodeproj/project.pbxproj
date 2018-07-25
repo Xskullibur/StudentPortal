@@ -22,6 +22,9 @@
 		DF7A672321056CFA00E46C6D /* NoOfFamilyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7A672221056CFA00E46C6D /* NoOfFamilyVC.m */; };
 		DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */; };
 		DF7C39C02108257800D4B5D1 /* CampusMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C39BF2108257800D4B5D1 /* CampusMap.storyboard */; };
+		DF7C39CC2108648E00D4B5D1 /* GPAResultTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7C39C72108648E00D4B5D1 /* GPAResultTVC.m */; };
+		DF7C39CD2108648E00D4B5D1 /* GPACalcTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7C39C92108648E00D4B5D1 /* GPACalcTVC.m */; };
+		DF7C39CE2108648E00D4B5D1 /* GPACalc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C39CB2108648E00D4B5D1 /* GPACalc.storyboard */; };
 		DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB25CAA20F5B33900F493F3 /* AppDelegate.m */; };
 		DFB25CB320F5B33900F493F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB220F5B33900F493F3 /* Assets.xcassets */; };
 		DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB25CB420F5B33900F493F3 /* LaunchScreen.storyboard */; };
@@ -87,6 +90,11 @@
 		DF7AADC220FC2DC8002A7BE9 /* UsersDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersDetails.h; sourceTree = "<group>"; };
 		DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersDetails.m; sourceTree = "<group>"; };
 		DF7C39BF2108257800D4B5D1 /* CampusMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CampusMap.storyboard; sourceTree = "<group>"; };
+		DF7C39C72108648E00D4B5D1 /* GPAResultTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPAResultTVC.m; path = "GPA Calc/GPAResultTVC.m"; sourceTree = SOURCE_ROOT; };
+		DF7C39C82108648E00D4B5D1 /* GPACalcTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPACalcTVC.h; path = "GPA Calc/GPACalcTVC.h"; sourceTree = SOURCE_ROOT; };
+		DF7C39C92108648E00D4B5D1 /* GPACalcTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPACalcTVC.m; path = "GPA Calc/GPACalcTVC.m"; sourceTree = SOURCE_ROOT; };
+		DF7C39CA2108648E00D4B5D1 /* GPAResultTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPAResultTVC.h; path = "GPA Calc/GPAResultTVC.h"; sourceTree = SOURCE_ROOT; };
+		DF7C39CB2108648E00D4B5D1 /* GPACalc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GPACalc.storyboard; path = "GPA Calc/GPACalc.storyboard"; sourceTree = SOURCE_ROOT; };
 		DFB25CA620F5B33900F493F3 /* StudentsITE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentsITE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB25CA920F5B33900F493F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFB25CAA20F5B33900F493F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -195,9 +203,23 @@
 			path = "Campus Map";
 			sourceTree = "<group>";
 		};
+		DF7C39C62108646900D4B5D1 /* GPA Calc */ = {
+			isa = PBXGroup;
+			children = (
+				DF7C39CB2108648E00D4B5D1 /* GPACalc.storyboard */,
+				DF7C39C82108648E00D4B5D1 /* GPACalcTVC.h */,
+				DF7C39C92108648E00D4B5D1 /* GPACalcTVC.m */,
+				DF7C39CA2108648E00D4B5D1 /* GPAResultTVC.h */,
+				DF7C39C72108648E00D4B5D1 /* GPAResultTVC.m */,
+			);
+			name = "GPA Calc";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
+				DF7C39C62108646900D4B5D1 /* GPA Calc */,
 				DF5B59652108524900DAA975 /* Webview */,
 				DF5B595C21084EE600DAA975 /* Student Info */,
 				DF7C39BE2108255200D4B5D1 /* Campus Map */,
@@ -424,6 +446,7 @@
 				DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */,
 				DF7C39C02108257800D4B5D1 /* CampusMap.storyboard in Resources */,
 				DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */,
+				DF7C39CE2108648E00D4B5D1 /* GPACalc.storyboard in Resources */,
 				DFDA2B9D20FEFCC4006BFBC1 /* FAS.storyboard in Resources */,
 				DFB25CB620F5B33900F493F3 /* LaunchScreen.storyboard in Resources */,
 				FE79224521076B4D0090DF26 /* ExamCountdown.storyboard in Resources */,
@@ -459,6 +482,7 @@
 				DFB25CB920F5B33900F493F3 /* main.m in Sources */,
 				DF2781CB20FEF01F009BA41A /* IADTVC.m in Sources */,
 				DF5B596021084F1100DAA975 /* StudInfoTVC.m in Sources */,
+				DF7C39CD2108648E00D4B5D1 /* GPACalcTVC.m in Sources */,
 				FECACC1B21060BEB00A2DBD6 /* FamilyInfoTVC.m in Sources */,
 				FECACC3021063DDD00A2DBD6 /* AvailableFasVC.m in Sources */,
 				FE792242210765050090DF26 /* fasMainTVC.m in Sources */,
@@ -467,6 +491,7 @@
 				DF2781CC20FEF01F009BA41A /* LifeskillsTVC.m in Sources */,
 				DF7A672321056CFA00E46C6D /* NoOfFamilyVC.m in Sources */,
 				DFB25CE020F5B5DA00F493F3 /* LoginVC.m in Sources */,
+				DF7C39CC2108648E00D4B5D1 /* GPAResultTVC.m in Sources */,
 				DFB25CAB20F5B33900F493F3 /* AppDelegate.m in Sources */,
 				DF5B5964210850C500DAA975 /* MapTVC.m in Sources */,
 				DF2781CE20FEF01F009BA41A /* LectTVC.m in Sources */,
