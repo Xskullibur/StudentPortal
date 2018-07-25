@@ -713,12 +713,23 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="536.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-f6-fO9">
-                                                    <rect key="frame" x="16" y="11" width="343" height="300"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fasBG" translatesAutoresizingMaskIntoConstraints="NO" id="2SM-dH-gCj">
+                                                    <rect key="frame" x="16" y="11" width="343" height="515"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-f6-fO9">
+                                                    <rect key="frame" x="16" y="11" width="343" height="515"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.46999616420000001" blue="1" alpha="0.89619006850410976" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <string key="text">The Financial Assistance Scheme is introduced to provide financial assistance to full-time ITE students from the lower and middle-income groups, as part of the Government's commitment to ensure that no able students are deterred by the cost of post-secondary education due to their financial circumstances.</string>
                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -757,5 +768,6 @@
     </scenes>
     <resources>
         <image name="Criteria" width="750" height="400"/>
+        <image name="fasBG" width="1300" height="1169"/>
     </resources>
 </document>
