@@ -29,15 +29,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    UINavigationController* nc = [segue destinationViewController];
+    MainMenuCVC *cvc = (MainMenuCVC*)nc.topViewController;
+    cvc.userIndex = _userDetails.UserIndex;
+    
 }
-*/
 
 - (IBAction)btnLogin:(id)sender{
     
@@ -45,14 +48,16 @@
         
         //Debug Info
         NSLog(@"Success");
-        NSLog(@"%ld", (long)_userDetails.UserIndex);
+        NSLog(@"%ldUser Index: ", (long)_userDetails.UserIndex);
         
+        /*
         UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
         MainMenuCVC *mainVC = [mainScreen instantiateViewControllerWithIdentifier:@"MainMenu"];
         mainVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         //mainVC.userIndex = 1;
         
         [self presentViewController:mainVC animated:YES completion:nil];
+         */
     }
     else{
 

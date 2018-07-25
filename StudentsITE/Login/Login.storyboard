@@ -31,6 +31,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnLogin:" destination="oPt-4P-Wzh" eventType="touchUpInside" id="Gr9-0W-NjR"/>
+                                    <segue destination="usM-bp-mK2" kind="show" id="N5Q-Vc-Jne"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFs-B5-6et">
@@ -78,6 +79,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysb-2Z-dD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="115.59220389805098"/>
+        </scene>
+        <!--MainMenu-->
+        <scene sceneID="NnK-sF-bbj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainMenu" referencedIdentifier="MainMenu" id="usM-bp-mK2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8e8-Lh-fcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="115"/>
         </scene>
     </scenes>
     <resources>
