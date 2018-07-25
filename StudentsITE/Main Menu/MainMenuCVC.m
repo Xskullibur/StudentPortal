@@ -8,6 +8,7 @@
 
 #import "MainMenuCVC.h"
 #import "CollectionViewCell.h"
+#import "StudInfoTVC.h"
 
 @interface MainMenuCVC (){
     NSArray *Buttons;
@@ -24,7 +25,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     
    
-    NSLog(@"%ld", (long)_userIndex);
+    NSLog(@"Main Menu User Index: %ld", (long)_userIndex);
     
     ButtonLabels = @[@"Campus Map", @"Exam Countdown", @"GPA Calculator", @"Lecturer Info", @"myConneXion", @"Student Info", @"Schedule", @"FAS"];
     Buttons = @[@"campusMap", @"examCountdown", @"gpaCalculator", @"lecturer", @"myConneXion", @"studentInfo", @"timetable", @"fAS"];
@@ -43,15 +44,18 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    UINavigationController* nc = [segue destinationViewController];
+    StudInfoTVC *tvc = (StudInfoTVC*)nc.topViewController;
+    tvc.userIndex = _userIndex;
+    
 }
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -124,6 +128,11 @@ static NSString * const reuseIdentifier = @"Cell";
             
         case 5:
             //Student Info
+        {
+            
+            [self performSegueWithIdentifier:@"ShowStudentInfo" sender:self];
+            
+        }
             break;
             
         case 6:

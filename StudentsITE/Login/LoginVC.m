@@ -48,7 +48,7 @@
         
         //Debug Info
         NSLog(@"Success");
-        NSLog(@"%ldUser Index: ", (long)_userDetails.UserIndex);
+        NSLog(@"Login User Index: %ld", (long)_userDetails.UserIndex);
         
         /*
         UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];

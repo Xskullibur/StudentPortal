@@ -12,7 +12,7 @@
         <scene sceneID="Nvo-pt-WR5">
             <objects>
                 <tableViewController id="gnY-MT-yvz" customClass="StudInfoTVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dtu-bV-CCt">
+                    <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dtu-bV-CCt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,11 +117,11 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Campus Email" id="IZh-oq-Dsu">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dvt-NI-wQ1">
-                                        <rect key="frame" x="0.0" y="383" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="221" id="dvt-NI-wQ1">
+                                        <rect key="frame" x="0.0" y="383" width="375" height="221"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dvt-NI-wQ1" id="bgc-QM-LKt">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="220.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZW-sC-3fO">
@@ -142,7 +142,13 @@
                             <outlet property="delegate" destination="gnY-MT-yvz" id="kdw-Yb-4jo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Student Info" id="jyB-c0-fi6"/>
+                    <navigationItem key="navigationItem" title="Student Info" id="jyB-c0-fi6">
+                        <barButtonItem key="leftBarButtonItem" title="Main" id="bQZ-ef-3pP">
+                            <connections>
+                                <action selector="btnMain:" destination="gnY-MT-yvz" id="yrD-LE-DqQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lbAdd1" destination="3ft-B7-8hH" id="uHg-rP-kXw"/>
                         <outlet property="lbAdd2" destination="cCh-gQ-03q" id="wEv-2e-7Ny"/>

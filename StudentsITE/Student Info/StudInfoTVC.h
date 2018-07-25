@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UsersDetails.h"
 
 @interface StudInfoTVC : UITableViewController
 @property (strong, nonatomic) IBOutlet UILabel *lbName;
@@ -17,7 +18,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *lbHp;
 @property (strong, nonatomic) IBOutlet UILabel *lbEmail;
 
+@property UsersDetails* UserDetails;
 @property  NSMutableArray *UserInfo;
 @property long userIndex;
 
+- (IBAction)btnMain:(id)sender;
 @end

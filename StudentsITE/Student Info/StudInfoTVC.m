@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _UserDetails = [[UsersDetails alloc] init];
+    
+    NSLog(@"StudInfo User Index: %ld", _userIndex);
+    
+    _lbNRIC.text = _UserDetails.UserInfo[_userIndex][0];
+    _lbName.text = _UserDetails.UserInfo[_userIndex][2];
+    _lbAdd1.text = _UserDetails.UserInfo[_userIndex][3];
+    _lbAdd2.text = _UserDetails.UserInfo[_userIndex][4];
+    _lbAdd3.text = _UserDetails.UserInfo[_userIndex][5];
+    _lbHp.text = _UserDetails.UserInfo[_userIndex][6];
+    _lbEmail.text = _UserDetails.UserInfo[_userIndex][7];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -95,4 +107,11 @@
 }
 */
 
+- (IBAction)btnMain:(id)sender {
+    UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
+    UICollectionViewController *mainVC = [mainScreen instantiateViewControllerWithIdentifier:@"MainMenu"];
+    mainVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    
+    [self presentViewController:mainVC animated:YES completion:nil];
+}
 @end
