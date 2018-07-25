@@ -170,7 +170,13 @@
                             <outlet property="delegate" destination="yh2-JY-Wsa" id="dRV-n0-MGQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Campus Map" id="qCB-aH-Gv5"/>
+                    <navigationItem key="navigationItem" title="Campus Map" id="qCB-aH-Gv5">
+                        <barButtonItem key="leftBarButtonItem" title="Main" id="oxk-1F-sdl">
+                            <connections>
+                                <action selector="btnMain:" destination="yh2-JY-Wsa" id="cyg-w5-tdc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZz-oU-IXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
