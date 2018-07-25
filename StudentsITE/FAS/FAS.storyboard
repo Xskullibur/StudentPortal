@@ -706,15 +706,15 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="" id="JGy-hP-VYF">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="561" id="1Xb-eG-SSo">
-                                        <rect key="frame" x="0.0" y="67" width="375" height="561"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="537" id="1Xb-eG-SSo">
+                                        <rect key="frame" x="0.0" y="67" width="375" height="537"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Xb-eG-SSo" id="5FP-kf-5X5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="560.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="536.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-f6-fO9">
-                                                    <rect key="frame" x="16" y="11" width="343" height="455"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="300"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <string key="text">The Financial Assistance Scheme is introduced to provide financial assistance to full-time ITE students from the lower and middle-income groups, as part of the Government's commitment to ensure that no able students are deterred by the cost of post-secondary education due to their financial circumstances.</string>
                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
@@ -734,7 +734,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZv-SD-51D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1201" y="-648"/>
+            <point key="canvasLocation" x="1200.8" y="-648.12593703148434"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h2N-nb-tQM">
