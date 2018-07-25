@@ -17,6 +17,7 @@
 		DF5B596021084F1100DAA975 /* StudInfoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B595D21084F1100DAA975 /* StudInfoTVC.m */; };
 		DF5B596121084F1100DAA975 /* StudentInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5B595E21084F1100DAA975 /* StudentInfo.storyboard */; };
 		DF5B5964210850C500DAA975 /* MapTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B5963210850C500DAA975 /* MapTVC.m */; };
+		DF5B59672108554100DAA975 /* MyConnection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5B59662108554100DAA975 /* MyConnection.storyboard */; };
 		DF75D23A2106BA0E00857072 /* fasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75D2392106BA0E00857072 /* fasCell.m */; };
 		DF7A672321056CFA00E46C6D /* NoOfFamilyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7A672221056CFA00E46C6D /* NoOfFamilyVC.m */; };
 		DF7AADC420FC2DC8002A7BE9 /* UsersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7AADC320FC2DC8002A7BE9 /* UsersDetails.m */; };
@@ -78,6 +79,7 @@
 		DF5B595F21084F1100DAA975 /* StudInfoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudInfoTVC.h; sourceTree = "<group>"; };
 		DF5B5962210850C500DAA975 /* MapTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapTVC.h; sourceTree = "<group>"; };
 		DF5B5963210850C500DAA975 /* MapTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapTVC.m; sourceTree = "<group>"; };
+		DF5B59662108554100DAA975 /* MyConnection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyConnection.storyboard; sourceTree = "<group>"; };
 		DF75D2382106BA0E00857072 /* fasCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fasCell.h; sourceTree = "<group>"; };
 		DF75D2392106BA0E00857072 /* fasCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fasCell.m; sourceTree = "<group>"; };
 		DF7A672121056CFA00E46C6D /* NoOfFamilyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoOfFamilyVC.h; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 			path = "Student Info";
 			sourceTree = "<group>";
 		};
+		DF5B59652108524900DAA975 /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				DF5B59662108554100DAA975 /* MyConnection.storyboard */,
+			);
+			path = Webview;
+			sourceTree = "<group>";
+		};
 		DF7C39BE2108255200D4B5D1 /* Campus Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +198,7 @@
 		DFB25C9D20F5B33900F493F3 = {
 			isa = PBXGroup;
 			children = (
+				DF5B59652108524900DAA975 /* Webview */,
 				DF5B595C21084EE600DAA975 /* Student Info */,
 				DF7C39BE2108255200D4B5D1 /* Campus Map */,
 				FE79224321076B2B0090DF26 /* Exam Countdown */,
@@ -409,6 +420,7 @@
 			files = (
 				FEF0AE2420FE1F5A004F72C8 /* MainMenu.storyboard in Resources */,
 				DF5B596121084F1100DAA975 /* StudentInfo.storyboard in Resources */,
+				DF5B59672108554100DAA975 /* MyConnection.storyboard in Resources */,
 				DF2781CF20FEF01F009BA41A /* Lect.storyboard in Resources */,
 				DF7C39C02108257800D4B5D1 /* CampusMap.storyboard in Resources */,
 				DFB25CDD20F5B5BB00F493F3 /* Login.storyboard in Resources */,
