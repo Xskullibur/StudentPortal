@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "UsersDetails.h"
+#import "AppDelegate.h"
 
-@interface LoginVC : UIViewController <UITextFieldDelegate>
+@interface LoginVC : UIViewController <UITextFieldDelegate>{
+    AppDelegate *AD;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *txtUser;
 @property (weak, nonatomic) IBOutlet UITextField *txtPass;
