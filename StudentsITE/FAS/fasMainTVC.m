@@ -38,7 +38,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of rows
-    return 2;
+    if (section==0) {
+        return 2;
+    }
+    else
+        return 1;
 }
 
 /*
