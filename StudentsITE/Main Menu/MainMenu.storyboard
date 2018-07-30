@@ -68,11 +68,41 @@
                     </navigationItem>
                     <connections>
                         <segue destination="qHO-a6-hzS" kind="show" identifier="ShowStudentInfo" id="9Ez-yR-4W6"/>
+                        <segue destination="Qd0-Hf-2a5" kind="show" identifier="ShowFAS" id="OgE-e6-FmW"/>
+                        <segue destination="UqP-T1-Zq2" kind="show" identifier="ShowExam" id="la2-VS-Rbx"/>
+                        <segue destination="jFV-FU-QZD" kind="show" identifier="ShowMap" id="FI5-m3-ppP"/>
+                        <segue destination="ree-1j-37F" kind="show" identifier="ShowLect" id="DCK-dg-zYD"/>
+                        <segue destination="6yI-sH-kWl" kind="show" identifier="ShowConnect" id="7in-xE-ycZ"/>
+                        <segue destination="MpP-nt-7rA" kind="show" identifier="ShowGPA" id="hip-Yt-jCQ"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjg-VM-1Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3325.5999999999999" y="-4.0479760119940034"/>
+        </scene>
+        <!--CampusMap-->
+        <scene sceneID="IvA-6N-uzW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CampusMap" referencedIdentifier="CampusMap" id="jFV-FU-QZD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9u-gy-LFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3962" y="-291"/>
+        </scene>
+        <!--ExamCountdown-->
+        <scene sceneID="nb3-w1-5ON">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExamCountdown" referencedIdentifier="ExamCountdown" id="UqP-T1-Zq2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IWy-Tr-IcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3986" y="-154"/>
+        </scene>
+        <!--FAS-->
+        <scene sceneID="su7-Ab-FR9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FAS" referencedIdentifier="FAS" id="Qd0-Hf-2a5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ix0-K4-0Jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3920" y="-83"/>
         </scene>
         <!--StudInfo-->
         <scene sceneID="Fpv-3s-sGv">
@@ -81,6 +111,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FDf-7q-Rev" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3947" y="-4"/>
+        </scene>
+        <!--Lect-->
+        <scene sceneID="Zy0-Pf-U4P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lect" referencedIdentifier="Lect" id="ree-1j-37F" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWh-Nz-ex9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3926" y="72"/>
+        </scene>
+        <!--Connect-->
+        <scene sceneID="Zvb-qz-SHt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyConnection" referencedIdentifier="Connect" id="6yI-sH-kWl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgN-ow-3ZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3942" y="144"/>
+        </scene>
+        <!--GPA-->
+        <scene sceneID="ccI-ju-9x2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GPACalc" referencedIdentifier="GPA" id="MpP-nt-7rA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoN-l4-Y3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3941" y="283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ewx-LT-zqf">

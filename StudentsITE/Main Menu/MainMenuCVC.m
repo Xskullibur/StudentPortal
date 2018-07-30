@@ -52,6 +52,7 @@ static NSString * const reuseIdentifier = @"Cell";
     // Pass the selected object to the new view controller.
     
     UINavigationController* nc = [segue destinationViewController];
+    
     StudInfoTVC *tvc = (StudInfoTVC*)nc.topViewController;
     tvc.userIndex = _userIndex;
     
@@ -93,10 +94,13 @@ static NSString * const reuseIdentifier = @"Cell";
         case 0:
             //Campus Map
         {
+            
+//            [self performSegueWithIdentifier:@"ShowMap" sender:self];
+            
             UIStoryboard *MapStoryboard = [UIStoryboard storyboardWithName:@"CampusMap" bundle:nil];
-            
+
             UIViewController *MapVC = [MapStoryboard instantiateViewControllerWithIdentifier:@"CampusMap"];
-            
+
             [[UIApplication sharedApplication].keyWindow setRootViewController:MapVC];
         }
             break;
@@ -104,11 +108,14 @@ static NSString * const reuseIdentifier = @"Cell";
         case 1:
             //Exam CountDown
         {
-            UIStoryboard *CountStoryboard = [UIStoryboard storyboardWithName:@"ExamCountdown" bundle:nil];
             
-            UIViewController *ExamVC = [CountStoryboard instantiateViewControllerWithIdentifier:@"ExamCountdown"];
+            [self performSegueWithIdentifier:@"ShowExam" sender:self];
             
-            [[UIApplication sharedApplication].keyWindow setRootViewController:ExamVC];
+//            UIStoryboard *CountStoryboard = [UIStoryboard storyboardWithName:@"ExamCountdown" bundle:nil];
+//
+//            UIViewController *ExamVC = [CountStoryboard instantiateViewControllerWithIdentifier:@"ExamCountdown"];
+//
+//            [[UIApplication sharedApplication].keyWindow setRootViewController:ExamVC];
         }
            
             break;
@@ -116,34 +123,42 @@ static NSString * const reuseIdentifier = @"Cell";
         case 2:
             //GPA Calculator
         {
-            UIStoryboard *GPAStoryboard = [UIStoryboard storyboardWithName:@"GPACalc" bundle:nil];
             
-            UIViewController *GPACalcTVC = [GPAStoryboard instantiateViewControllerWithIdentifier:@"GPA"];
+            [self performSegueWithIdentifier:@"ShowGPA" sender:self];
             
-            [[UIApplication sharedApplication].keyWindow setRootViewController:GPACalcTVC];
+//            UIStoryboard *GPAStoryboard = [UIStoryboard storyboardWithName:@"GPACalc" bundle:nil];
+//
+//            UIViewController *GPACalcTVC = [GPAStoryboard instantiateViewControllerWithIdentifier:@"GPA"];
+//
+//            [[UIApplication sharedApplication].keyWindow setRootViewController:GPACalcTVC];
         }
             break;
             
         case 3:
             //Lect Info
         {
-            UIStoryboard *LectStoryboard = [UIStoryboard storyboardWithName:@"Lect" bundle:nil];
             
-            UIViewController *LectTVC = [LectStoryboard instantiateViewControllerWithIdentifier:@"Lect"];
+            [self performSegueWithIdentifier:@"ShowLect" sender:self];
             
-            [[UIApplication sharedApplication].keyWindow setRootViewController:LectTVC];
-            
+//            UIStoryboard *LectStoryboard = [UIStoryboard storyboardWithName:@"Lect" bundle:nil];
+//
+//            UIViewController *LectTVC = [LectStoryboard instantiateViewControllerWithIdentifier:@"Lect"];
+//
+//            [[UIApplication sharedApplication].keyWindow setRootViewController:LectTVC];
         }
             break;
             
         case 4:
             //myConneXion
         {
-            UIStoryboard *WebStoryboard = [UIStoryboard storyboardWithName:@"MyConnection" bundle:nil];
             
-            UIViewController *ConnectVC = [WebStoryboard instantiateViewControllerWithIdentifier:@"Connect"];
+            [self performSegueWithIdentifier:@"ShowConnect" sender:self];
             
-            [[UIApplication sharedApplication].keyWindow setRootViewController:ConnectVC];
+//            UIStoryboard *WebStoryboard = [UIStoryboard storyboardWithName:@"MyConnection" bundle:nil];
+//
+//            UIViewController *ConnectVC = [WebStoryboard instantiateViewControllerWithIdentifier:@"Connect"];
+//
+//            [[UIApplication sharedApplication].keyWindow setRootViewController:ConnectVC];
         }
             break;
             
@@ -159,11 +174,14 @@ static NSString * const reuseIdentifier = @"Cell";
         case 6:
             //FAS
         {
-            UIStoryboard *FasStoryboard = [UIStoryboard storyboardWithName:@"FAS" bundle:nil];
             
-            UIViewController *FasTVC = [FasStoryboard instantiateViewControllerWithIdentifier:@"FAS"];
+            [self performSegueWithIdentifier:@"ShowFAS" sender:self];
             
-            [[UIApplication sharedApplication].keyWindow setRootViewController:FasTVC];
+//            UIStoryboard *FasStoryboard = [UIStoryboard storyboardWithName:@"FAS" bundle:nil];
+//
+//            UIViewController *FasTVC = [FasStoryboard instantiateViewControllerWithIdentifier:@"FAS"];
+//
+//            [[UIApplication sharedApplication].keyWindow setRootViewController:FasTVC];
         }
             break;
             

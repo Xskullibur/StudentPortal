@@ -174,6 +174,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Main" id="oxk-1F-sdl">
                             <connections>
                                 <action selector="btnMain:" destination="yh2-JY-Wsa" id="cyg-w5-tdc"/>
+                                <segue destination="zdR-Lb-aB0" kind="show" id="ykh-6O-N4C"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -181,6 +182,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZz-oU-IXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="752.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--MainMenu-->
+        <scene sceneID="8v2-EA-gZI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainMenu" referencedIdentifier="MainMenu" id="zdR-Lb-aB0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5pP-pj-Kai" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="naG-sO-kSK">

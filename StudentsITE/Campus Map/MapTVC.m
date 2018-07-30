@@ -96,10 +96,10 @@
 */
 
 - (IBAction)btnMain:(id)sender {
-    UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
-    UICollectionViewController *mainVC = [mainScreen instantiateViewControllerWithIdentifier:@"MainMenu"];
-    mainVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    
-    [self presentViewController:mainVC animated:YES completion:nil];
+//    UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
+//    UICollectionViewController *mainVC = [mainScreen instantiateViewControllerWithIdentifier:@"MainMenu"];
+//    mainVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    
+//    [self presentViewController:mainVC animated:YES completion:nil];
 }
 @end
