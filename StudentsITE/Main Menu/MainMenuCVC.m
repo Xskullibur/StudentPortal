@@ -24,7 +24,6 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
     NSLog(@"Main Menu User Index: %ld", (long)_userIndex);
     
     ButtonLabels = @[@"Campus Map", @"Exam Countdown", @"GPA Calculator", @"Lecturer Info", @"myConneXion", @"Student Info", @"FAS"];
@@ -44,6 +43,7 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -51,11 +51,8 @@ static NSString * const reuseIdentifier = @"Cell";
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    UINavigationController* nc = [segue destinationViewController];
-    StudInfoTVC *tvc = (StudInfoTVC*)nc.topViewController;
-    tvc.userIndex = _userIndex;
-    
 }
+ */
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -96,6 +93,7 @@ static NSString * const reuseIdentifier = @"Cell";
             UIStoryboard *MapStoryboard = [UIStoryboard storyboardWithName:@"CampusMap" bundle:nil];
             
             UIViewController *MapVC = [MapStoryboard instantiateViewControllerWithIdentifier:@"CampusMap"];
+            MapVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             
             [[UIApplication sharedApplication].keyWindow setRootViewController:MapVC];
         }
@@ -107,6 +105,7 @@ static NSString * const reuseIdentifier = @"Cell";
             UIStoryboard *CountStoryboard = [UIStoryboard storyboardWithName:@"ExamCountdown" bundle:nil];
             
             UIViewController *ExamVC = [CountStoryboard instantiateViewControllerWithIdentifier:@"ExamCountdown"];
+            ExamVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             
             [[UIApplication sharedApplication].keyWindow setRootViewController:ExamVC];
         }
@@ -119,6 +118,7 @@ static NSString * const reuseIdentifier = @"Cell";
             UIStoryboard *GPAStoryboard = [UIStoryboard storyboardWithName:@"GPACalc" bundle:nil];
             
             UIViewController *GPACalcTVC = [GPAStoryboard instantiateViewControllerWithIdentifier:@"GPA"];
+            GPACalcTVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             
             [[UIApplication sharedApplication].keyWindow setRootViewController:GPACalcTVC];
         }
@@ -130,6 +130,7 @@ static NSString * const reuseIdentifier = @"Cell";
             UIStoryboard *LectStoryboard = [UIStoryboard storyboardWithName:@"Lect" bundle:nil];
             
             UIViewController *LectTVC = [LectStoryboard instantiateViewControllerWithIdentifier:@"Lect"];
+            LectTVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             
             [[UIApplication sharedApplication].keyWindow setRootViewController:LectTVC];
             
@@ -142,6 +143,7 @@ static NSString * const reuseIdentifier = @"Cell";
             UIStoryboard *WebStoryboard = [UIStoryboard storyboardWithName:@"MyConnection" bundle:nil];
             
             UIViewController *ConnectVC = [WebStoryboard instantiateViewControllerWithIdentifier:@"Connect"];
+            ConnectVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             
             [[UIApplication sharedApplication].keyWindow setRootViewController:ConnectVC];
         }
@@ -151,7 +153,12 @@ static NSString * const reuseIdentifier = @"Cell";
             //Student Info
         {
             
-            [self performSegueWithIdentifier:@"ShowStudentInfo" sender:self];
+            UIStoryboard *StudStoryboard = [UIStoryboard storyboardWithName:@"StudentInfo" bundle:nil];
+            
+            UIViewController *StudVC = [StudStoryboard instantiateViewControllerWithIdentifier:@"StudInfo"];
+            StudVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+            
+            [[UIApplication sharedApplication].keyWindow setRootViewController:StudVC];
             
         }
             break;
@@ -162,6 +169,7 @@ static NSString * const reuseIdentifier = @"Cell";
             UIStoryboard *FasStoryboard = [UIStoryboard storyboardWithName:@"FAS" bundle:nil];
             
             UIViewController *FasTVC = [FasStoryboard instantiateViewControllerWithIdentifier:@"FAS"];
+            FasTVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             
             [[UIApplication sharedApplication].keyWindow setRootViewController:FasTVC];
         }
