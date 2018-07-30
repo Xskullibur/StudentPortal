@@ -60,7 +60,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of rows
-    return 4;
+    if (section==3) {
+        return 3;
+    }
+    else
+        return 4;
 }
 
 /*
@@ -161,5 +165,28 @@
     [[UIApplication sharedApplication].keyWindow setRootViewController:MainMenuCVC];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [_gdCMOS resignFirstResponder];
+    [_gdNT resignFirstResponder];
+    [_gdSW1 resignFirstResponder];
+    [_gdPPD1 resignFirstResponder];
+    
+    [_gdADE resignFirstResponder];
+    [_gdSYSAD resignFirstResponder];
+    [_gdSW2 resignFirstResponder];
+    [_gdPPD2 resignFirstResponder];
+    
+    [_gdMAE resignFirstResponder];
+    [_gdIAD resignFirstResponder];
+    [_gdSW3 resignFirstResponder];
+    [_gdPM resignFirstResponder];
+    
+    [_gdMSD resignFirstResponder];
+    [_gdIA resignFirstResponder];
+    [_gdSW4 resignFirstResponder];
+    [[self.view window] endEditing: YES];
+    
+}
 
 @end

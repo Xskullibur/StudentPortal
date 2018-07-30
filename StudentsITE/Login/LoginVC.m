@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    _txtPass.delegate = self;
     _userDetails = [[UsersDetails alloc] init];
 }
 
@@ -49,6 +49,8 @@
         //Debug Info
         NSLog(@"Success");
         NSLog(@"Login User Index: %ld", (long)_userDetails.UserIndex);
+        
+        [self performSegueWithIdentifier:@"ShowMain" sender:nil];
         
         /*
         UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
@@ -84,4 +86,9 @@
     
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField // this method get called when you tap "Go"
+{
+    [self btnLogin:self];
+    return YES;
+}
 @end

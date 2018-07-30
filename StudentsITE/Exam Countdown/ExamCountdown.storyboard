@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BpA-RQ-Oth">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BpA-RQ-Oth">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>TimesNewRomanPSMT</string>
+        </array>
+        <array key="TrebuchetMS.ttf">
+            <string>TrebuchetMS</string>
+        </array>
+        <array key="TrebuchetMSBold.ttf">
+            <string>TrebuchetMS-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Exam Countdown-->
         <scene sceneID="fTX-34-9ES">
@@ -107,15 +118,10 @@
                         <viewLayoutGuide key="safeArea" id="1Xe-Pj-eJk"/>
                     </view>
                     <navigationItem key="navigationItem" title="Exam Countdown" id="Yab-rh-XsO">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="yQk-jO-MX4">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ImC-P4-S9k">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Main"/>
-                                <connections>
-                                    <action selector="mainBtn:" destination="dhv-Vw-eLD" eventType="touchUpInside" id="1q7-YL-nR4"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" title="Main" id="vn0-D1-ma7">
+                            <connections>
+                                <action selector="mainBtn:" destination="dhv-Vw-eLD" id="pmM-Nd-SGQ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

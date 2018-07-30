@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NRIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4O-jM-uf3">
                                 <rect key="frame" x="16" y="248" width="343" height="21"/>
@@ -74,6 +74,7 @@
                     <connections>
                         <outlet property="txtPass" destination="K7R-fo-ymK" id="ICM-Sp-ss1"/>
                         <outlet property="txtUser" destination="iFs-B5-6et" id="41h-Ff-H7z"/>
+                        <segue destination="usM-bp-mK2" kind="show" identifier="ShowMain" id="Rhc-AJ-D5G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysb-2Z-dD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -93,4 +94,7 @@
         <image name="Login Bg" width="1920" height="1080"/>
         <image name="Logo" width="1008" height="386"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Rhc-AJ-D5G"/>
+    </inferredMetricsTieBreakers>
 </document>
