@@ -217,8 +217,7 @@
 				DF7C39CA2108648E00D4B5D1 /* GPAResultTVC.h */,
 				DF7C39C72108648E00D4B5D1 /* GPAResultTVC.m */,
 			);
-			name = "GPA Calc";
-			path = "New Group";
+			path = "GPA Calc";
 			sourceTree = "<group>";
 		};
 		DFB25C9D20F5B33900F493F3 = {
