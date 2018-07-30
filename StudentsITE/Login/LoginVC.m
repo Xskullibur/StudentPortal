@@ -50,6 +50,9 @@
         NSLog(@"Success");
         NSLog(@"Login User Index: %ld", (long)_userDetails.UserIndex);
         
+        AD = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+        AD.userIndex = (long)_userDetails.UserIndex;
+        
         /*
         UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
         MainMenuCVC *mainVC = [mainScreen instantiateViewControllerWithIdentifier:@"MainMenu"];

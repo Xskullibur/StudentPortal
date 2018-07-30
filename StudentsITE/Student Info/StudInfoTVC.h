@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "UsersDetails.h"
+#import "AppDelegate.h"
 
-@interface StudInfoTVC : UITableViewController
+@interface StudInfoTVC : UITableViewController{
+    AppDelegate *AD;
+}
+
 @property (strong, nonatomic) IBOutlet UILabel *lbName;
 @property (strong, nonatomic) IBOutlet UILabel *lbNRIC;
 @property (strong, nonatomic) IBOutlet UILabel *lbAdd1;
