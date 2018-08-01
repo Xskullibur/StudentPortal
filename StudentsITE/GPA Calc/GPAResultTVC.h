@@ -35,10 +35,10 @@
 @property NSInteger MSD;
 @property NSInteger SW4;
 
-@property NSInteger MainCU;
-@property NSInteger ElectCU;
-@property NSInteger LSCU;
-@property NSInteger SWCU;
-@property NSInteger IACU;
+@property CGFloat MainCU;
+@property CGFloat ElectCU;
+@property CGFloat LSCU;
+@property CGFloat SWCU;
+@property CGFloat IACU;
 
 @end

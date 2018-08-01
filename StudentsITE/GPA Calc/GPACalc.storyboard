@@ -81,13 +81,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GRADE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-rF-R1H">
-                                                    <rect key="frame" x="262" y="7" width="97" height="30"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3FX-WB-x3U">
+                                                    <rect key="frame" x="312" y="6" width="49" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -181,13 +178,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GRADE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tQO-w2-7Mi">
-                                                    <rect key="frame" x="262" y="7" width="97" height="30"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1DQ-HQ-Bp1">
+                                                    <rect key="frame" x="312" y="6" width="49" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -281,13 +275,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GRADE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8zT-FE-9pP">
-                                                    <rect key="frame" x="262" y="7" width="97" height="30"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vq6-H1-y0p">
+                                                    <rect key="frame" x="312" y="6" width="49" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -381,13 +372,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GRADE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYr-lt-qxu">
-                                                    <rect key="frame" x="262" y="7" width="97" height="30"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lJy-Wr-WlL">
+                                                    <rect key="frame" x="312" y="6" width="49" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -406,10 +394,9 @@
                                 <action selector="btnMain:" destination="Cam-wT-qVu" id="e9M-Bb-VOd"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Calculate" id="fAH-BB-vHg">
+                        <barButtonItem key="rightBarButtonItem" title="Calculate" springLoaded="YES" id="fAH-BB-vHg">
                             <connections>
                                 <action selector="btnCalc:" destination="Cam-wT-qVu" id="Ifx-pW-3Gz"/>
-                                <segue destination="6qT-st-uOO" kind="show" id="v7P-2I-cgc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -424,11 +411,12 @@
                         <outlet property="gdPM" destination="eSQ-D8-xBM" id="xav-jk-js1"/>
                         <outlet property="gdPPD1" destination="amc-qP-bcl" id="mHR-ei-NQE"/>
                         <outlet property="gdPPD2" destination="xj1-0n-MXm" id="kdr-Z1-uNi"/>
-                        <outlet property="gdSW1" destination="hOx-rF-R1H" id="ifu-QW-mbX"/>
-                        <outlet property="gdSW2" destination="tQO-w2-7Mi" id="YDy-SU-rYk"/>
-                        <outlet property="gdSW3" destination="8zT-FE-9pP" id="U3N-ry-lBu"/>
-                        <outlet property="gdSW4" destination="XYr-lt-qxu" id="w2D-Qe-3oX"/>
+                        <outlet property="gdSW1" destination="3FX-WB-x3U" id="BLC-au-d2c"/>
+                        <outlet property="gdSW2" destination="1DQ-HQ-Bp1" id="z3h-SE-2Cy"/>
+                        <outlet property="gdSW3" destination="Vq6-H1-y0p" id="4Xy-GY-rQo"/>
+                        <outlet property="gdSW4" destination="lJy-Wr-WlL" id="ahs-HX-UHU"/>
                         <outlet property="gdSYSAD" destination="jwO-Ln-Nv2" id="k11-ln-7Xr"/>
+                        <segue destination="6qT-st-uOO" kind="show" identifier="ShowResult" id="LPy-YI-8vf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xx-Ae-bBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -589,7 +577,7 @@
         <!--Navigation Controller-->
         <scene sceneID="6a5-Qy-5un">
             <objects>
-                <navigationController storyboardIdentifier="GPA" automaticallyAdjustsScrollViewInsets="NO" id="X5N-ig-P9J" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GPA" automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenKeyboardAppears="YES" id="X5N-ig-P9J" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uhe-dW-CJw">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

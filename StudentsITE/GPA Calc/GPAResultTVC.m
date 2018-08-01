@@ -32,7 +32,28 @@
     CGFloat Y2S2GPA = (_IA * _IACU + _MSD * _MainCU + _SW4 * _SWCU)/(_MainCU + _IACU + _SWCU);
     _lbY2S2GPA.text=[NSString stringWithFormat:@"%.3f",Y2S2GPA];
     
-    CGFloat CLGPA = (Y1S1GPA + Y1S2GPA + Y2S1GPA + Y2S2GPA)/4;
+    CGFloat CLGPA=0;
+    NSInteger count = 0;
+    if (Y1S1GPA==0||Y1S2GPA==0||Y2S1GPA==0||Y2S2GPA==0) {
+        
+        if (Y1S1GPA != 0) {
+            count += 1;
+        }
+        
+        if (Y1S2GPA != 0) {
+            count += 1;
+        }
+        
+        if (Y2S1GPA != 0) {
+            count += 1;
+        }
+        
+        if (Y2S2GPA != 0) {
+            count += 1;
+        }
+        
+        CLGPA = (Y1S1GPA + Y1S2GPA + Y2S1GPA + Y2S2GPA)/count;
+    }
     _lbCLGPA.text = [NSString stringWithFormat:@"%.3f",CLGPA];
    
 }

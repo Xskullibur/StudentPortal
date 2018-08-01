@@ -28,8 +28,34 @@
     else if ([Grade isEqualToString:@"D"]){
         return 1;
     }
+    else if ([Grade isEqualToString:@"E"]){
+        return 1;
+    }
     else{
         return 0;
+    }
+}
+
+-(BOOL) gradeCheck: (NSString *) Grade {
+#define ALPHA_ARRAY [NSArray arrayWithObjects: @"A", @"B", @"C",@"D",@"E",@"F",@"",nil]
+    BOOL match = NO;
+    NSUInteger f;
+    for (f = 0; f < [ALPHA_ARRAY count]; f++) {
+        NSString * stringFromArray = [ALPHA_ARRAY objectAtIndex:f];
+        if ([[Grade uppercaseString]isEqualToString:stringFromArray]) {
+            match = YES;
+            break;
+        }
+    }
+    if ( match ) {
+        // do found
+        return true;
+        
+    } else {
+        // do not found
+       
+        return false;
+        
     }
 }
 
@@ -122,28 +148,49 @@
     GPAResultTVC *vc = [segue destinationViewController];
     vc.CMOS=[self GradeToScale:[_gdCMOS.text uppercaseString]];
     vc.NT=[self GradeToScale:[_gdNT.text uppercaseString]];
-    vc.SW1=[self GradeToScale:[_gdSW1.text uppercaseString]];
+    if (_gdSW1.isOn==true) {
+        vc.SW1=1;
+    }
+    else{
+        vc.SW1=0;
+    }
     vc.PPD1=[self GradeToScale:[_gdPPD1.text uppercaseString]];
     
     vc.ADE=[self GradeToScale:[_gdADE.text uppercaseString]];
     vc.SYSAD=[self GradeToScale:[_gdADE.text uppercaseString]];
-    vc.SW2=[self GradeToScale:[_gdADE.text uppercaseString]];
+    if (_gdSW2.isOn==true) {
+        vc.SW2=1;
+    }
+    else{
+        vc.SW2=0;
+    }
     vc.PPD2=[self GradeToScale:[_gdADE.text uppercaseString]];
     
     vc.MAE = [self GradeToScale:[_gdMAE.text uppercaseString]];
     vc.IAD = [self GradeToScale:[_gdIAD.text uppercaseString]];
-    vc.SW3 = [self GradeToScale:[_gdSW3.text uppercaseString]];
+    if (_gdSW3.isOn==true) {
+        vc.SW3=1;
+    }
+    else{
+        vc.SW3=0;
+    }
+    
     vc.PM = [self GradeToScale:[_gdPM.text uppercaseString]];
     
     vc.IA = [self GradeToScale:[_gdIA.text uppercaseString]];
     vc.MSD = [self GradeToScale:[_gdMSD.text uppercaseString]];
-    vc.SW4 = [self GradeToScale:[_gdSW4.text uppercaseString]];
+    if (_gdSW4.isOn==true) {
+        vc.SW4=1;
+    }
+    else{
+        vc.SW4=0;
+    }
     
-    vc.MainCU = 7;
-    vc.ElectCU = 3;
-    vc.LSCU = 2;
-    vc.SWCU = 1;
-    vc.IACU = 4;
+    vc.MainCU = 7.0;
+    vc.ElectCU = 3.0;
+    vc.LSCU = 2.0;
+    vc.SWCU = 1.0;
+    vc.IACU = 4.0;
 
     
     
@@ -153,8 +200,18 @@
 
 
 - (IBAction)btnCalc:(id)sender {
+    if( [self gradeCheck:_gdCMOS.text] && [self gradeCheck:_gdNT.text] &&[self gradeCheck:_gdPPD1.text] && [self gradeCheck:_gdADE.text] && [self gradeCheck:_gdSYSAD.text] && [self gradeCheck:_gdPPD2.text] && [self gradeCheck:_gdMAE.text] && [self gradeCheck:_gdIAD.text] && [self gradeCheck:_gdPM.text] && [self gradeCheck:_gdMSD.text] && [self gradeCheck:_gdIA.text]){
+        [self performSegueWithIdentifier:@"ShowResult" sender:sender];
+    }
+    else{
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Wrong Grade" message:@"Wrong Grade Entered" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        
+        [alert addAction: okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
    
-    
 }
 
 - (IBAction)btnMain:(id)sender {
