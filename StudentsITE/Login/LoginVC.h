@@ -10,7 +10,8 @@
 #import "UsersDetails.h"
 #import "AppDelegate.h"
 
-@interface LoginVC : UIViewController <UITextFieldDelegate>{
+@interface LoginVC : UIViewController <UITextFieldDelegate>
+{
     AppDelegate *AD;
 }
 

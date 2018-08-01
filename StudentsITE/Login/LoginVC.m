@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    _txtPass.delegate = self;
+    _txtPass.delegate = self;
     _userDetails = [[UsersDetails alloc] init];
 }
 
@@ -49,7 +49,8 @@
         
         AD = (AppDelegate*)[[UIApplication sharedApplication]delegate];
         AD.userIndex = (long)_userDetails.UserIndex;
-
+        
+        [self performSegueWithIdentifier:@"ShowMain" sender:nil];
     }
     else{
 
