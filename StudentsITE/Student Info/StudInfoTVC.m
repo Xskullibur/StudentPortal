@@ -19,6 +19,9 @@
     
     _UserDetails = [[UsersDetails alloc] init];
     
+    AD = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    _userIndex = AD.userIndex;
+    
     NSLog(@"StudInfo User Index: %ld", _userIndex);
     
     _lbNRIC.text = _UserDetails.UserInfo[_userIndex][0];

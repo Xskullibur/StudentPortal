@@ -7,7 +7,6 @@
 //
 
 #import "LoginVC.h"
-#import "MainMenuCVC.h"
 #import "UsersDetails.h"
 
 
@@ -20,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _txtPass.delegate = self;
+//    _txtPass.delegate = self;
     _userDetails = [[UsersDetails alloc] init];
 }
 
@@ -29,6 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -36,11 +36,8 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    UINavigationController* nc = [segue destinationViewController];
-    MainMenuCVC *cvc = (MainMenuCVC*)nc.topViewController;
-    cvc.userIndex = _userDetails.UserIndex;
-    
 }
+*/
 
 - (IBAction)btnLogin:(id)sender{
     
@@ -50,16 +47,9 @@
         NSLog(@"Success");
         NSLog(@"Login User Index: %ld", (long)_userDetails.UserIndex);
         
-        [self performSegueWithIdentifier:@"ShowMain" sender:nil];
-        
-        /*
-        UIStoryboard *mainScreen = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
-        MainMenuCVC *mainVC = [mainScreen instantiateViewControllerWithIdentifier:@"MainMenu"];
-        mainVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-        //mainVC.userIndex = 1;
-        
-        [self presentViewController:mainVC animated:YES completion:nil];
-         */
+        AD = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+        AD.userIndex = (long)_userDetails.UserIndex;
+
     }
     else{
 
