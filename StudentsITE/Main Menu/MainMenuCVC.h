@@ -10,7 +10,8 @@
 
 @interface MainMenuCVC : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
-@property (nonatomic) long userIndex;
+@property (strong, nonatomic) IBOutlet UICollectionView *CollectionView;
+
 - (IBAction)LogoutBtn:(id)sender;
 
 @end

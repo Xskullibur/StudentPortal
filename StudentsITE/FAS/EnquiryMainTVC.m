@@ -1,18 +1,18 @@
 //
-//  EnquiryTVC.m
+//  EnquiryMainTVC.m
 //  StudentsITE
 //
-//  Created by Alson on 21/7/18.
+//  Created by Alson on 2/8/18.
 //  Copyright © 2018 Student2. All rights reserved.
 //
 
-#import "EnquiryTVC.h"
+#import "EnquiryMainTVC.h"
 
-@interface EnquiryTVC ()
+@interface EnquiryMainTVC ()
 
 @end
 
-@implementation EnquiryTVC
+@implementation EnquiryMainTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,12 +35,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of rows
-    return 3;
+    return 1;
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
@@ -50,7 +50,6 @@
     [header.textLabel setFont:[UIFont boldSystemFontOfSize:[header.textLabel.font pointSize]]];
     
 }
-
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -105,20 +104,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)ContinueBtn:(id)sender {
-    
-    if (!_singaporeanSW.isOn && !_scholarshipSW.isOn) {
-        
-        //Failed Alert
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Not Eligible For Application" message:@"Sorry You Are Not Eligible For Our Financial Assistance Scheme..." preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
-        
-        [alert addAction: okButton];
-        [self presentViewController:alert animated:YES completion:nil];
-    }
-    
-}
 
 @end

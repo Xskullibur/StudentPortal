@@ -11,5 +11,6 @@
 @interface fasMainTVC : UITableViewController
 
 - (IBAction)mainBtn:(id)sender;
+@property (strong, nonatomic) IBOutlet UITableView *tableview;
 
 @end
