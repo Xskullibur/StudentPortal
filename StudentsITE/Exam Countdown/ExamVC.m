@@ -21,31 +21,21 @@
 -(void) displayTime: (NSTimer *)timer{
     NSDateComponents * compare = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[NSDate date] toDate:_examDate options:0];
     
-    _daysLbl.text = [NSString stringWithFormat:@"%ld", [compare day]];
-    _hoursLbl.text = [NSString stringWithFormat:@"%ld", [compare hour]];
-    _minsLbl.text = [NSString stringWithFormat:@"%ld", [compare minute]];
-    _secLbl.text = [NSString stringWithFormat:@"%ld", [compare second]];
-    
-    if ([compare day] == 7 && [compare hour] == 0 && [compare minute] == 0 && [compare second] == 0) {
+    if ([compare day] <= 0 && [compare hour] <= 0 && [compare minute] <= 0 && [compare second] <= 0) {
         
-        //Empty Alert
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alert!" message: [@"1 Week Left Before" stringByAppendingString: _examLbl.text] preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
-        
-        [alert addAction: okButton];
-        [self presentViewController:alert animated:YES completion:nil];
+        _daysLbl.text = @"-";
+        _hoursLbl.text = @"-";
+        _minsLbl.text = @"-";
+        _secLbl.text = @"-";
+        _overLbl.hidden = false;
         
     }
-    else if ([compare day] == 1 && [compare hour] == 0 && [compare minute] == 0 && [compare second] == 0){
-        
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alert!" message: [[@"Your" stringByAppendingString:_examLbl.text] stringByAppendingString:@"is Tomorrow!!!"] preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
-        
-        [alert addAction: okButton];
-        [self presentViewController:alert animated:YES completion:nil];
-        
+    else{
+        _overLbl.hidden = true;
+        _daysLbl.text = [NSString stringWithFormat:@"%ld", [compare day]];
+        _hoursLbl.text = [NSString stringWithFormat:@"%ld", [compare hour]];
+        _minsLbl.text = [NSString stringWithFormat:@"%ld", [compare minute]];
+        _secLbl.text = [NSString stringWithFormat:@"%ld", [compare second]];
     }
     
 }
@@ -88,7 +78,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    exams = @[@[@"MAE Theory Exam", @"2018", @"9", @"4", @"15"], @[@"S&W Theory Exam", @"2018", @"8", @"15", @"12"]];
+    NSDateComponents* currDate = [[NSCalendar currentCalendar] components: NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour fromDate:[NSDate date]];
+    
+    exams = @[@[@"MAE Theory Exam", @"2018", @"9", @"4", @"15"],
+              @[@"S&W Theory Exam", @"2018", @"8", @"15", @"12"],
+              @[@"Exam Over", [NSString stringWithFormat:@"%ld", [currDate year]], [NSString stringWithFormat:@"%ld", [currDate month]], [NSString stringWithFormat:@"%ld", [currDate day]], [NSString stringWithFormat:@"%ld", [currDate hour]]]];
     
     _pickerView.dataSource = self;
     _pickerView.delegate = self;

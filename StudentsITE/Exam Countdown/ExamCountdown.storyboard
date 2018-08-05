@@ -106,6 +106,12 @@
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Exam Started / Over)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11J-aY-Q9C">
+                                <rect key="frame" x="16" y="210" width="343" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="23"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Xe-Pj-eJk"/>
@@ -123,6 +129,7 @@
                         <outlet property="examLbl" destination="9gV-iH-ZpG" id="5xO-5y-MIT"/>
                         <outlet property="hoursLbl" destination="ngo-4V-zMN" id="Yj1-fJ-gyJ"/>
                         <outlet property="minsLbl" destination="uI5-lw-WLJ" id="Bgm-Nd-bkk"/>
+                        <outlet property="overLbl" destination="11J-aY-Q9C" id="lO8-xi-Eig"/>
                         <outlet property="pickerView" destination="cdU-q0-Wyh" id="Tjh-Od-iHX"/>
                         <outlet property="secLbl" destination="MN1-g5-2pu" id="dNV-go-7zg"/>
                     </connections>

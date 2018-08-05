@@ -17,9 +17,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *secLbl;
 @property (weak, nonatomic) IBOutlet UILabel *examLbl;
 @property (weak, nonatomic) IBOutlet UILabel *dateLbl;
+@property (weak, nonatomic) IBOutlet UILabel *overLbl;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
-
 
 @property NSDate* examDate;
 @property NSDate* currentDate;
