@@ -8,7 +8,11 @@
 
 #import "ExamVC.h"
 
-@interface ExamVC ()
+@interface ExamVC (){
+    
+    NSArray *exams;
+    
+}
 
 @end
 
@@ -21,11 +25,73 @@
     _hoursLbl.text = [NSString stringWithFormat:@"%ld", [compare hour]];
     _minsLbl.text = [NSString stringWithFormat:@"%ld", [compare minute]];
     _secLbl.text = [NSString stringWithFormat:@"%ld", [compare second]];
+    
+    if ([compare day] == 7 && [compare hour] == 0 && [compare minute] == 0 && [compare second] == 0) {
+        
+        //Empty Alert
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alert!" message: [@"1 Week Left Before" stringByAppendingString: _examLbl.text] preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        
+        [alert addAction: okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
+    else if ([compare day] == 1 && [compare hour] == 0 && [compare minute] == 0 && [compare second] == 0){
+        
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alert!" message: [[@"Your" stringByAppendingString:_examLbl.text] stringByAppendingString:@"is Tomorrow!!!"] preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        
+        [alert addAction: okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
+    
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    
+    return 1;
+    
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    
+    return exams.count;
+    
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    
+    return exams[row][0];
+    
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    
+    NSDateComponents* comps = [[NSDateComponents alloc] init];
+    comps.year = [exams[row][1] integerValue];
+    comps.month = [exams[row][2] integerValue];
+    comps.day = [exams[row][3] integerValue];
+    comps.hour = [exams[row][4] integerValue];
+    
+    NSCalendar* calandar = [NSCalendar currentCalendar];
+    _examDate = [calandar dateFromComponents:comps];
+    
+    _examLbl.text = exams[row][0];
+    _dateLbl.text = [_examDate description];
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    exams = @[@[@"MAE Theory Exam", @"2018", @"9", @"4", @"15"], @[@"S&W Theory Exam", @"2018", @"8", @"15", @"12"]];
+    
+    _pickerView.dataSource = self;
+    _pickerView.delegate = self;
     
     //Declare Exam Date
     NSDateComponents* comps = [[NSDateComponents alloc] init];

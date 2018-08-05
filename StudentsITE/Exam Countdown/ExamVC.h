@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExamVC : UIViewController
+@interface ExamVC : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 - (IBAction)mainBtn:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *daysLbl;
@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *secLbl;
 @property (weak, nonatomic) IBOutlet UILabel *examLbl;
 @property (weak, nonatomic) IBOutlet UILabel *dateLbl;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+
 
 @property NSDate* examDate;
 @property NSDate* currentDate;
