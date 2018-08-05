@@ -108,7 +108,7 @@
 
 - (IBAction)ContinueBtn:(id)sender {
     
-    if (!_singaporeanSW.isOn && !_scholarshipSW.isOn) {
+    if (!_singaporeanSW.isOn || _scholarshipSW.isOn) {
         
         //Failed Alert
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Not Eligible For Application" message:@"Sorry You Are Not Eligible For Our Financial Assistance Scheme..." preferredStyle:UIAlertControllerStyleAlert];
@@ -118,6 +118,15 @@
         [alert addAction: okButton];
         [self presentViewController:alert animated:YES completion:nil];
     }
+    
+}
+
+- (IBAction)menuBtn:(id)sender {
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MainMenu"];
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:vc animated:YES completion:nil];
     
 }
 

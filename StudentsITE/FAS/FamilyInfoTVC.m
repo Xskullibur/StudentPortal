@@ -21,6 +21,10 @@
     
     _Family = [[NSMutableArray alloc] init];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"AllBackground"]];
+    
+    [self setupKeyboardDismissTaps];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -33,7 +37,58 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dismissKeyboard{
+    
+    [self.view endEditing:YES];
+    
+}
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    
+    [self dismissKeyboard];
+}
+
+-(void)setupKeyboardDismissTaps {
+    
+    //Tap Gesture
+    UITapGestureRecognizer *TGR = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.tableView addGestureRecognizer:TGR];
+    
+    //Swipe Up Gesture
+    UISwipeGestureRecognizer *SGRup = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    SGRup.cancelsTouchesInView = NO;
+    SGRup.direction = UISwipeGestureRecognizerDirectionUp;
+    [self.tableView addGestureRecognizer:SGRup];
+    
+    //Down
+    UISwipeGestureRecognizer *SGRdown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    SGRdown.cancelsTouchesInView = NO;
+    SGRdown.direction = UISwipeGestureRecognizerDirectionDown;
+    [self.tableView addGestureRecognizer:SGRdown];
+    
+    //Left
+    UISwipeGestureRecognizer *SGRleft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    SGRleft.cancelsTouchesInView = NO;
+    SGRleft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.tableView addGestureRecognizer:SGRleft];
+    
+    //Right
+    UISwipeGestureRecognizer *SGRright = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    SGRright.cancelsTouchesInView = NO;
+    SGRright.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.tableView addGestureRecognizer:SGRright];
+    
+}
+
 #pragma mark - Table view data source
+
+-(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
+    
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView*)view;
+    [header.textLabel setTextColor:[UIColor whiteColor]];
+    [header.textLabel setFont:[UIFont boldSystemFontOfSize:[header.textLabel.font pointSize]]];
+    
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
@@ -47,7 +102,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 130;
+    return 100;
     
 }
 
@@ -122,7 +177,7 @@
         FamilyMemberCell* cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:i]];
         
         //If Cell Is Empty
-        if ([cell.nameTxt.text isEqual: @""] || [cell.relationshipTxt.text isEqual: @""] || [cell.gmiTxt.text isEqual: @""]) {
+        if ([cell.relationshipTxt.text isEqual: @""]) {
             
             //Empty Alert
             UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Missing Fields" message:@"Please Fill In All Fields!" preferredStyle:UIAlertControllerStyleAlert];
@@ -138,17 +193,25 @@
         }
         else{
             
-            //Continue Adding
-            FamilyMember* member = [[FamilyMember alloc] initWithName:cell.nameTxt.text andRelationship:cell.relationshipTxt.text andGMI:[cell.gmiTxt.text doubleValue]];
-            [_Family addObject:member];
-            
+            //Check if GMI Field is Empty
+            if ([cell.gmiTxt.text isEqual:@""]) {
+                
+                FamilyMember *member = [[FamilyMember alloc] initWithRelationShip:cell.relationshipTxt.text andGMI: 0];
+                [_Family addObject:member];
+                
+            }
+            else{
+                
+                FamilyMember *member = [[FamilyMember alloc] initWithRelationShip:cell.relationshipTxt.text andGMI:[cell.gmiTxt.text doubleValue]];
+                [_Family addObject:member];
+                
+            }
         }
         
     }
     
     for (FamilyMember* member in _Family) {
         
-        NSLog(@"%@ Name: ", member.Name);
         NSLog(@"%@ Relationship: ", member.Relationship);
         NSLog(@"%ld GMI: ", (long)member.GMI);
         
@@ -156,9 +219,12 @@
     
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+- (IBAction)mainBtn:(id)sender {
     
-    [[self.view window] endEditing:YES];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MainMenu"];
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:vc animated:YES completion:nil];
     
 }
 

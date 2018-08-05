@@ -10,17 +10,17 @@
 
 @implementation FamilyMember
 
-- (instancetype)initWithName:(NSString *)name andRelationship:(NSString *)relationship andGMI:(NSInteger)gmi
-{
+-(instancetype)initWithRelationShip:(NSString *)relationship andGMI:(NSInteger)gmi{
+    
     self = [super init];
     if (self) {
         
-        _Name = name;
         _Relationship = relationship;
         _GMI = gmi;
         
     }
     return self;
+    
 }
 
 @end

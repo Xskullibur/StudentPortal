@@ -11,7 +11,6 @@
 @interface FamilyMemberCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UITextField *relationshipTxt;
-@property (weak, nonatomic) IBOutlet UITextField *nameTxt;
 @property (weak, nonatomic) IBOutlet UITextField *gmiTxt;
 
 @end

@@ -24,7 +24,6 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     [_gmiTxt resignFirstResponder];
-    [_nameTxt resignFirstResponder];
     [_relationshipTxt resignFirstResponder];
     [[self window] endEditing: YES];
     

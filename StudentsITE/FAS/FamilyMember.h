@@ -11,9 +11,8 @@
 @interface FamilyMember : NSObject
 
 @property NSString* Relationship;
-@property NSString* Name;
 @property NSInteger GMI;
 
--(instancetype) initWithName:(NSString*) name andRelationship:(NSString*) relationship andGMI: (NSInteger)gmi;
+-(instancetype) initWithRelationShip:(NSString*) relationship andGMI: (NSInteger)gmi;
 
 @end

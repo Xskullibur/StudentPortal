@@ -11,6 +11,8 @@
 
 @interface AvailableFasVC : UIViewController
 
+- (IBAction)mainBtn:(id)sender;
+
 @property CGFloat PCI;
 @property FamilyMember* FamilyMember;
 @property NSMutableArray* Family;

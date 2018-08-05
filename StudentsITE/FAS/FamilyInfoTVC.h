@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "FamilyMember.h"
 
-@interface FamilyInfoTVC : UITableViewController
+@interface FamilyInfoTVC : UITableViewController <UIScrollViewDelegate>
 
 @property FamilyMember* FamilyMember;
 @property NSInteger NoOfFamily;
 @property NSMutableArray* Family;
 - (IBAction)doneBtn:(id)sender;
+- (IBAction)mainBtn:(id)sender;
 
 @end
