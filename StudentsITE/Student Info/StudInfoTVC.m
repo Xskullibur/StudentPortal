@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"AllBackground"]];
+    
     _UserDetails = [[UsersDetails alloc] init];
     
     AD = (AppDelegate*)[[UIApplication sharedApplication]delegate];
@@ -54,6 +56,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of rows
     return 1;
+}
+
+-(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
+    
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView*)view;
+    [header.textLabel setTextColor:[UIColor whiteColor]];
+    [header.textLabel setFont:[UIFont boldSystemFontOfSize:[header.textLabel.font pointSize]]];
+    
 }
 
 /*
