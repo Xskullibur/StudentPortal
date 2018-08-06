@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface GPACalcTVC : UITableViewController
+@interface GPACalcTVC : UITableViewController <UIScrollViewDelegate>
 -(NSInteger)GradeToScale:(NSString *)Grade;
 
 @property (strong, nonatomic) IBOutlet UITextField *gdCMOS;
@@ -27,6 +27,17 @@
 @property (strong, nonatomic) IBOutlet UITextField *gdIA;
 @property (strong, nonatomic) IBOutlet UITextField *gdMSD;
 @property (strong, nonatomic) IBOutlet UISwitch *gdSW4;
+
+- (IBAction)PF3:(id)sender;
+
+- (IBAction)PF1:(id)sender;
+- (IBAction)PF4:(id)sender;
+- (IBAction)PF2:(id)sender;
+@property (strong, nonatomic) IBOutlet UISwitch *PF3;
+@property (strong, nonatomic) IBOutlet UILabel *lblPF1;
+@property (strong, nonatomic) IBOutlet UILabel *lblPF2;
+@property (strong, nonatomic) IBOutlet UILabel *lblPF3;
+@property (strong, nonatomic) IBOutlet UILabel *lblPF4;
 
 - (IBAction)btnCalc:(id)sender;
 - (IBAction)btnMain:(id)sender;
