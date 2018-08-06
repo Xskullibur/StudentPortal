@@ -70,7 +70,13 @@
     _examDate = [calandar dateFromComponents:comps];
     
     _examLbl.text = exams[row][0];
-    _dateLbl.text = [_examDate description];
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    df.timeZone = [NSTimeZone systemTimeZone];
+    [df setDateStyle:NSDateFormatterLongStyle];
+    [df setTimeStyle:NSDateFormatterMediumStyle];
+    
+    _dateLbl.text = [df stringFromDate:_examDate];
     
 }
 
@@ -99,7 +105,13 @@
     
     //Display Info
     _examLbl.text = @"MAE Theory Exam";
-    _dateLbl.text = [_examDate description];
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    df.timeZone = [NSTimeZone systemTimeZone];
+    [df setDateStyle:NSDateFormatterLongStyle];
+    [df setTimeStyle:NSDateFormatterMediumStyle];
+    
+    _dateLbl.text = [df stringFromDate:_examDate];
     
     //Display Coutdown
     [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(displayTime:) userInfo:nil repeats:YES];
