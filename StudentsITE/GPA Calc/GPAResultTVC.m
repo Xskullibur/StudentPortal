@@ -55,8 +55,15 @@
         
         CLGPA = (Y1S1GPA + Y1S2GPA + Y2S1GPA + Y2S2GPA)/count;
     }
-    _lbCLGPA.text = [NSString stringWithFormat:@"%.3f",CLGPA];
-   
+  
+    
+    if (isnan(CLGPA)) {
+        _lbCLGPA.text = @"-";
+        
+    }
+    else{
+       _lbCLGPA.text = [NSString stringWithFormat:@"%.3f",CLGPA];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
