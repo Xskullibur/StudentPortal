@@ -60,6 +60,10 @@
     
 }
 
+- (IBAction)nextClicked:(id)sender {
+    [[self.view window] endEditing:YES];
+}
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     [_numberTxt resignFirstResponder];

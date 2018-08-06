@@ -363,6 +363,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="nextClicked:" destination="QwQ-RN-fgw" eventType="touchUpInside" id="z6b-hz-ZJi"/>
                                     <segue destination="dFX-VP-aJw" kind="show" id="Ll3-ud-Lgd"/>
                                 </connections>
                             </button>

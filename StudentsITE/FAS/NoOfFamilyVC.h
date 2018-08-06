@@ -16,5 +16,6 @@
 - (IBAction)stepperClicked:(id)sender;
 - (IBAction)MenuBtn:(id)sender;
 - (IBAction)numberTxt:(id)sender;
+- (IBAction)nextClicked:(id)sender;
 
 @end
