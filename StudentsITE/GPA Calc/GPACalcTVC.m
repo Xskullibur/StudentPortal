@@ -67,6 +67,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"AllBackground"]];
+    
+    [self setupKeyboardDismissTaps];
+    
+   
     // Uncomment the following line to preserve selection between presentations.
     //self.clearsSelectionOnViewWillAppear = YES;
     
@@ -94,6 +99,57 @@
     }
     else
         return 4;
+}
+
+-(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
+    
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView*)view;
+    [header.textLabel setTextColor:[UIColor whiteColor]];
+    [header.textLabel setFont:[UIFont boldSystemFontOfSize:[header.textLabel.font pointSize]]];
+    
+}
+
+-(void)dismissKeyboard{
+    
+    [self.view endEditing:YES];
+    
+}
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    
+    [self dismissKeyboard];
+}
+
+-(void)setupKeyboardDismissTaps {
+    
+    //Tap Gesture
+    UITapGestureRecognizer *TGR = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.tableView addGestureRecognizer:TGR];
+    
+    //Swipe Up Gesture
+    UISwipeGestureRecognizer *SGRup = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    SGRup.cancelsTouchesInView = NO;
+    SGRup.direction = UISwipeGestureRecognizerDirectionUp;
+    [self.tableView addGestureRecognizer:SGRup];
+    
+    //Down
+    UISwipeGestureRecognizer *SGRdown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    SGRdown.cancelsTouchesInView = NO;
+    SGRdown.direction = UISwipeGestureRecognizerDirectionDown;
+    [self.tableView addGestureRecognizer:SGRdown];
+    
+    //Left
+    UISwipeGestureRecognizer *SGRleft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    SGRleft.cancelsTouchesInView = NO;
+    SGRleft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.tableView addGestureRecognizer:SGRleft];
+    
+    //Right
+    UISwipeGestureRecognizer *SGRright = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    SGRright.cancelsTouchesInView = NO;
+    SGRright.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.tableView addGestureRecognizer:SGRright];
+    
 }
 
 /*
@@ -249,4 +305,45 @@
     
 }
 
+
+
+- (IBAction)PF1:(id)sender {
+    if (_gdSW1.isOn) {
+         _lblPF1.text =@"Pass";
+    }
+    else{
+        _lblPF1.text = @"Fail";
+    }
+   
+}
+
+- (IBAction)PF2:(id)sender {
+    if (_gdSW2.isOn) {
+        _lblPF2.text =@"Pass";
+    }
+    else{
+        _lblPF2.text = @"Fail";
+    }
+    
+}
+
+- (IBAction)PF3:(id)sender {
+    if (_gdSW3.isOn) {
+        _lblPF3.text =@"Pass";
+    }
+    else{
+        _lblPF3.text = @"Fail";
+    }
+    
+}
+
+- (IBAction)PF4:(id)sender {
+    if (_gdSW4.isOn) {
+        _lblPF4.text =@"Pass";
+    }
+    else{
+        _lblPF4.text = @"Fail";
+    }
+    
+}
 @end
