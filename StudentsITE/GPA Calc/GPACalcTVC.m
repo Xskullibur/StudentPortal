@@ -71,7 +71,10 @@
     
     [self setupKeyboardDismissTaps];
     
-   
+    _lblPF1.text = @"Fail";
+    _lblPF2.text = @"Fail";
+    _lblPF3.text = @"Fail";
+    _lblPF4.text = @"Fail";
     // Uncomment the following line to preserve selection between presentations.
     //self.clearsSelectionOnViewWillAppear = YES;
     
