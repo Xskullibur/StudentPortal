@@ -19,18 +19,51 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"AllBackground"]];
+    CGFloat Y1S1GPA = 0;
+    CGFloat Y1S2GPA = 0;
+    CGFloat Y2S1GPA = 0;
+    CGFloat Y2S2GPA = 0;
+    
+    if(_ElectCU == 0 && _LS1 == 0 ){
+        Y1S1GPA = (_CMOS * _MainCU + _NT * _MainCU)/(_MainCU * 2);
+    }
+    else if (_Elective == 0 && _LS1 == 0){
+        Y1S1GPA = (_CMOS * _MainCU + _NT * _MainCU)/(_MainCU * 2 + _ElectCU);
+    }
+    else if (_Elective == 0){
+        Y1S1GPA = (_CMOS * _MainCU + _NT * _MainCU + _LS1 * _LSCU)/(_MainCU * 2 + _LSCU);
+    }
+    else if (_LS1 == 0) {
+        Y1S1GPA = (_CMOS * _MainCU + _NT * _MainCU + _Elective * _ElectCU)/(_MainCU * 2 + _ElectCU);
+    }
+    else{
+     Y1S1GPA = (_CMOS * _MainCU + _NT * _MainCU + _LS1 * _LSCU + _Elective * _ElectCU)/(_MainCU * 2 + _LSCU + _ElectCU);
+    }
     
     
-    CGFloat Y1S1GPA = (_CMOS * _MainCU + _NT * _MainCU +  _SW1 * _SWCU + _PPD1 * _LSCU)/(_MainCU * 2 + _LSCU + _SWCU);
+    
+    
+    if (_LS2 == 0) {
+        Y1S2GPA = (_ADE * _MainCU + _SYSAD * _MainCU)/(_MainCU * 2);
+    }
+    else{
+        Y1S2GPA = (_ADE * _MainCU + _SYSAD * _MainCU + _LS2 * _LSCU)/(_MainCU *2 + _LSCU);
+    }
+    
+   
+    if (_LSE==0) {
+          Y2S1GPA = (_MAE * _MainCU + _IAD * _MainCU)/(_MainCU * 2);
+    }
+    else{
+   Y2S1GPA = (_MAE * _MainCU + _IAD * _MainCU+ _LSE * _LSCU)/(_MainCU * 2+ _LSCU);
+    }
+   
+    Y2S2GPA = (_IA * _IACU + _MSD * _MainCU)/(_MainCU + _IACU);
+    
+    
     _lbY1S1GPA.text=[NSString stringWithFormat:@"%.3f",Y1S1GPA];
-    
-    CGFloat Y1S2GPA = (_ADE * _MainCU + _SYSAD * _MainCU + _SW2 * _SWCU + _PPD2 * _LSCU)/(_MainCU *2 + _LSCU + _SWCU);
-    _lbY1S2GPA.text=[NSString stringWithFormat:@"%.3f",Y1S2GPA];
-    
-    CGFloat Y2S1GPA = (_MAE * _MainCU + _IAD * _MainCU + _SW3 * _SWCU + _PM * _LSCU)/(_MainCU * 2 + _SWCU + _LSCU);
-    _lbY2S1GPA.text = [NSString stringWithFormat:@"%.3f",Y2S1GPA];
-    
-    CGFloat Y2S2GPA = (_IA * _IACU + _MSD * _MainCU + _SW4 * _SWCU)/(_MainCU + _IACU + _SWCU);
+     _lbY1S2GPA.text=[NSString stringWithFormat:@"%.3f",Y1S2GPA];
+     _lbY2S1GPA.text = [NSString stringWithFormat:@"%.3f",Y2S1GPA];
     _lbY2S2GPA.text=[NSString stringWithFormat:@"%.3f",Y2S2GPA];
     
     CGFloat CLGPA=0;
