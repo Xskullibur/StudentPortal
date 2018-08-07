@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface IADTVC : UITableViewController
+@property (weak, nonatomic) IBOutlet UIButton *emailAdd;
 @property (weak, nonatomic) IBOutlet UIButton *btnNumber;
 - (IBAction)btnCall:(id)sender;
+- (IBAction)emailBtn:(id)sender;
 
 @end

@@ -97,4 +97,12 @@
     NSURL *URL= [NSURL URLWithString:[@"telprompt://" stringByAppendingString:_btnNumber.titleLabel.text]];
     [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:nil];
 }
+
+- (IBAction)emailBtn:(id)sender {
+    
+    NSString* url = [[[@"mailto:" stringByAppendingString:_emailAdd.titleLabel.text] stringByAppendingString:@"?subject=subjectHere&body=bodyHere"] stringByAddingPercentEncodingWithAllowedCharacters: [NSCharacterSet URLFragmentAllowedCharacterSet]];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
+    
+}
 @end
