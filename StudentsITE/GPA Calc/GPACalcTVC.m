@@ -347,6 +347,19 @@
 
 
 
+- (IBAction)BtnElectYN:(id)sender {
+    
+    if (_ElectYN.isOn) {
+        [_gdElect setOn:YES animated:YES];
+        _lblPF5.text = @"Pass";
+    }
+    else{
+        [_gdElect setOn:NO animated:YES];
+        _lblPF5.text = @"";
+    }
+    
+}
+
 - (IBAction)PF3:(id)sender {
     if (_gdSW3.isOn) {
         _lblPF3.text =@"Pass";
@@ -368,12 +381,20 @@
 }
 
 - (IBAction)PF5:(id)sender {
-    if (_gdElect.isOn) {
-        _lblPF5.text =@"Pass";
+    
+    if (_ElectYN.isOn) {
+        if (_gdElect.isOn) {
+            _lblPF5.text =@"Pass";
+        }
+        else{
+            _lblPF5.text = @"Fail";
+        }
     }
     else{
-        _lblPF5.text = @"Fail";
+        [_gdElect setOn:NO animated:YES];
+        _lblPF5.text = @"";
     }
+    
 }
 
 

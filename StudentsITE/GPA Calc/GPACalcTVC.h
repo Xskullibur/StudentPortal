@@ -32,6 +32,7 @@
 
 @property (strong, nonatomic) IBOutlet UISwitch *ElectYN;
 
+- (IBAction)BtnElectYN:(id)sender;
 
 - (IBAction)PF3:(id)sender;
 
