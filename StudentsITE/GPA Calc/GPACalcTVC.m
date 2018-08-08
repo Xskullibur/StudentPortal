@@ -67,6 +67,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+     [_CellElect setAccessibilityElementsHidden:true];
    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"AllBackground"]];
     
     [self setupKeyboardDismissTaps];
@@ -99,6 +100,9 @@
 //#warning Incomplete implementation, return the number of rows
     if (section==3) {
         return 3;
+    }
+    else if (section == 0){
+        return 5;
     }
     else
         return 4;
@@ -210,46 +214,57 @@
     GPAResultTVC *vc = [segue destinationViewController];
     vc.CMOS=[self GradeToScale:[_gdCMOS.text uppercaseString]];
     vc.NT=[self GradeToScale:[_gdNT.text uppercaseString]];
-    if (_gdSW1.isOn==true) {
+    if (_gdSW1.isOn) {
         vc.SW1=1;
     }
     else{
         vc.SW1=0;
     }
-    vc.PPD1=[self GradeToScale:[_gdPPD1.text uppercaseString]];
+    vc.LS1=[self GradeToScale:[_gdLS1.text uppercaseString]];
     
     vc.ADE=[self GradeToScale:[_gdADE.text uppercaseString]];
-    vc.SYSAD=[self GradeToScale:[_gdADE.text uppercaseString]];
-    if (_gdSW2.isOn==true) {
+    vc.SYSAD=[self GradeToScale:[_gdSYSAD.text uppercaseString]];
+    if (_gdSW2.isOn) {
         vc.SW2=1;
     }
     else{
         vc.SW2=0;
     }
-    vc.PPD2=[self GradeToScale:[_gdADE.text uppercaseString]];
+    vc.LS2=[self GradeToScale:[_gdLS2.text uppercaseString]];
     
     vc.MAE = [self GradeToScale:[_gdMAE.text uppercaseString]];
     vc.IAD = [self GradeToScale:[_gdIAD.text uppercaseString]];
-    if (_gdSW3.isOn==true) {
+    if (_gdSW3.isOn) {
         vc.SW3=1;
     }
     else{
         vc.SW3=0;
     }
     
-    vc.PM = [self GradeToScale:[_gdPM.text uppercaseString]];
+    vc.LSE = [self GradeToScale:[_gdLSE.text uppercaseString]];
     
     vc.IA = [self GradeToScale:[_gdIA.text uppercaseString]];
     vc.MSD = [self GradeToScale:[_gdMSD.text uppercaseString]];
-    if (_gdSW4.isOn==true) {
+    if (_gdSW4.isOn) {
         vc.SW4=1;
     }
     else{
         vc.SW4=0;
     }
+    if(_gdElect.isOn){
+        vc.Elective = 4;
+    }
+    else{
+        vc.Elective = 0;
+    }
     
     vc.MainCU = 7.0;
-    vc.ElectCU = 3.0;
+    if (_ElectYN.isOn) {
+        vc.ElectCU = 3.0;
+    }
+    else{
+    vc.ElectCU = 0;
+    }
     vc.LSCU = 2.0;
     vc.SWCU = 1.0;
     vc.IACU = 4.0;
@@ -262,7 +277,7 @@
 
 
 - (IBAction)btnCalc:(id)sender {
-    if( [self gradeCheck:_gdCMOS.text] && [self gradeCheck:_gdNT.text] &&[self gradeCheck:_gdPPD1.text] && [self gradeCheck:_gdADE.text] && [self gradeCheck:_gdSYSAD.text] && [self gradeCheck:_gdPPD2.text] && [self gradeCheck:_gdMAE.text] && [self gradeCheck:_gdIAD.text] && [self gradeCheck:_gdPM.text] && [self gradeCheck:_gdMSD.text] && [self gradeCheck:_gdIA.text]){
+    if( [self gradeCheck:_gdCMOS.text] && [self gradeCheck:_gdNT.text] &&[self gradeCheck:_gdLS1.text] && [self gradeCheck:_gdADE.text] && [self gradeCheck:_gdSYSAD.text] && [self gradeCheck:_gdLS2.text] && [self gradeCheck:_gdMAE.text] && [self gradeCheck:_gdIAD.text] && [self gradeCheck:_gdLSE.text] && [self gradeCheck:_gdMSD.text] && [self gradeCheck:_gdIA.text]){
         [self performSegueWithIdentifier:@"ShowResult" sender:sender];
     }
     else{
@@ -289,17 +304,17 @@
     [_gdCMOS resignFirstResponder];
     [_gdNT resignFirstResponder];
     [_gdSW1 resignFirstResponder];
-    [_gdPPD1 resignFirstResponder];
+    [_gdLS1 resignFirstResponder];
     
     [_gdADE resignFirstResponder];
     [_gdSYSAD resignFirstResponder];
     [_gdSW2 resignFirstResponder];
-    [_gdPPD2 resignFirstResponder];
+    [_gdLS2 resignFirstResponder];
     
     [_gdMAE resignFirstResponder];
     [_gdIAD resignFirstResponder];
     [_gdSW3 resignFirstResponder];
-    [_gdPM resignFirstResponder];
+    [_gdLSE resignFirstResponder];
     
     [_gdMSD resignFirstResponder];
     [_gdIA resignFirstResponder];
@@ -330,6 +345,21 @@
     
 }
 
+
+
+- (IBAction)BtnElectYN:(id)sender {
+    
+    if (_ElectYN.isOn) {
+        [_gdElect setOn:YES animated:YES];
+        _lblPF5.text = @"Pass";
+    }
+    else{
+        [_gdElect setOn:NO animated:YES];
+        _lblPF5.text = @"";
+    }
+    
+}
+
 - (IBAction)PF3:(id)sender {
     if (_gdSW3.isOn) {
         _lblPF3.text =@"Pass";
@@ -349,4 +379,23 @@
     }
     
 }
+
+- (IBAction)PF5:(id)sender {
+    
+    if (_ElectYN.isOn) {
+        if (_gdElect.isOn) {
+            _lblPF5.text =@"Pass";
+        }
+        else{
+            _lblPF5.text = @"Fail";
+        }
+    }
+    else{
+        [_gdElect setOn:NO animated:YES];
+        _lblPF5.text = @"";
+    }
+    
+}
+
+
 @end

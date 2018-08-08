@@ -19,17 +19,18 @@
 @property NSInteger NT;
 @property NSInteger BM1;
 @property NSInteger SW1;
-@property NSInteger PPD1;
+@property NSInteger LS1;
+@property NSInteger Elective;
 
 @property NSInteger ADE;
 @property NSInteger SYSAD;
 @property NSInteger SW2;
-@property NSInteger PPD2;
+@property NSInteger LS2;
 
 @property NSInteger MAE;
 @property NSInteger IAD;
 @property NSInteger SW3;
-@property NSInteger PM;
+@property NSInteger LSE;
 
 @property NSInteger IA;
 @property NSInteger MSD;
