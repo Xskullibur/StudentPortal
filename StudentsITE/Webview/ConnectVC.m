@@ -20,7 +20,11 @@
     NSURL *url = [NSURL URLWithString:urlNameInString];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     
-    [self.MyConnect loadRequest:urlRequest];
+    _MyConnect.autoresizesSubviews = YES;
+    _MyConnect.scalesPageToFit = YES;
+    _MyConnect.frame = self.view.frame;
+    [_MyConnect loadRequest:urlRequest];
+
     // Do any additional setup after loading the view.
 }
 

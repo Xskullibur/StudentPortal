@@ -101,7 +101,7 @@
 }
 
 - (IBAction)emailBtn:(id)sender {
-    NSString* url = [[[@"mailto:" stringByAppendingString:_emailAdd.titleLabel.text] stringByAppendingString:@"?subject=subjectHere&body=bodyHere"] stringByAddingPercentEncodingWithAllowedCharacters: [NSCharacterSet URLFragmentAllowedCharacterSet]];
+    NSString* url = [[@"mailto:" stringByAppendingString:_emailAdd.titleLabel.text] stringByAddingPercentEncodingWithAllowedCharacters: [NSCharacterSet URLFragmentAllowedCharacterSet]];
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
 }
