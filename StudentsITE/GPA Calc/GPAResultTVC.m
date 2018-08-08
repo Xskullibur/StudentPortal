@@ -55,7 +55,9 @@
         
         CLGPA = (Y1S1GPA + Y1S2GPA + Y2S1GPA + Y2S2GPA)/count;
     }
-  
+    if (Y1S1GPA != 0 && Y1S2GPA != 0 && Y2S1GPA != 0 && Y2S2GPA != 0) {
+        CLGPA =(Y1S1GPA + Y1S2GPA + Y2S1GPA + Y2S2GPA)/4;
+    }
     
     if (isnan(CLGPA)) {
         _lbCLGPA.text = @"-";
